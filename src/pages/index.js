@@ -1,13 +1,12 @@
 import React from "react"
 import '../css/Layout.css';
-import NavigationBar from "../components/NavigationBar";
 import IntroHeader from "../components/IntroHeader";
+import Layout from "../components/Layout";
 
 const App = () => (
-    <div>
-        <NavigationBar/>
+    <Layout>
         <IntroHeader/>
-    </div>
+    </Layout>
 );
 
 export default App;
