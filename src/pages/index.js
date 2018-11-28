@@ -1,3 +1,13 @@
 import React from "react"
+import '../css/Layout.css';
+import NavigationBar from "../components/NavigationBar";
+import IntroHeader from "../components/IntroHeader";
 
-export default () => <div>Hello world!</div>
+const App = () => (
+    <div>
+        <NavigationBar/>
+        <IntroHeader/>
+    </div>
+);
+
+export default App;
