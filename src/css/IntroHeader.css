@@ -1,0 +1,15 @@
+.intro-bg {background-size: cover !important; background: url("../images/background.jpg") no-repeat; position: relative; height: 100%; width: 84vw; margin-left: 230px;}
+.gradient-01:before { background: rgba(0, 0, 0, 0.8); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #131b51), color-stop(100%, #e8d4e6)); background: -webkit-linear-gradient(-315deg, #131b51 0%, #e8d4e6 100%); background: -webkit-linear-gradient(45deg, #131b51 0%, #e8d4e6 100%); background: linear-gradient(45deg, #131b51 0%, #e8d4e6 100%);  opacity: 0.6; content:""; height:100%; left:0; position:absolute; top: 0; width:100%; z-index: 0; }
+.intro-container {display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: flex-start; min-height: 100vh;}
+.name-container {display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; justify-content: center; margin-left: 10%; z-index: 300}
+.hello {display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-start;}
+.hello h1 {font-size: 5vmax; color: #ffffff; text-transform: uppercase; font-weight: 700; font-family: 'Raleway', sans-serif; margin-bottom: 20px}
+.hello h1 span {font-size: 3.5vh; display: block; font-family: 'Raleway', sans-serif; font-weight: bold;}
+.designation { height: 60px; }
+.designation span {font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif;}
+.intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; font-weight: 600; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
+.intro-button a:hover { background: #2f3742; }
+
+@media screen and (max-width: 950px){
+    .intro-bg { margin-left: 0; width: 100% }
+}
