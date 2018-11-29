@@ -1,7 +1,7 @@
-.header-container a {display: block; color: black; padding: 16px; text-decoration: none;}
+.header-container a{display: block; color: black; text-decoration: none;}
 .menu-responsive { display: none; }
 
-.header-container { position: fixed; overflow: visible; display: block; left: 0px; width: 230px; height: 100%; top: 0px; z-index: 999; background: #2f3742;padding-bottom: 110px; }
+.header-container { position: absolute; overflow: visible; display: block; left: 0px; width: 230px; top: 0px; bottom: 0px; z-index: 999; background: #2f3742;padding-bottom: 110px; }
 .navbar-default { background: transparent; border: 0px; }
 .navbar-default .navbar-nav > li > a { font-size: 14px; text-transform: uppercase; color: #ffffff; font-family: 'Raleway', sans-serif; font-weight: 600; padding: 10px 15px 10px 30px; border-right: 0px solid transparent; }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { color: #ffffff; }
@@ -28,12 +28,12 @@
 .navbar-header { margin: 10px 10px 35px 10px; }
 
 /*menu-footer*/
-.menu-footer { position: absolute; bottom: 0px; left: 0px; right: 0px; width: 100%; text-align: left; margin: 20px 20px 20px 30px; }
+.menu-footer { position: absolute; bottom: 0px; left: 0px; right: 0px; width: 230px; text-align: left; margin: 20px 20px 20px 30px;}
 .menu-footer .social { margin-bottom: 14px; }
 .menu-footer .social ul li { display: inline-block; }
-.menu-footer .social ul li a { display: block; font-size: 14px; padding-right:15px; color: #ffffff; }
+.menu-footer .social ul li a { display: block; font-size: 14px; padding-right:15px; color: #ffffff;}
 .menu-footer .social ul li a:hover { color: #07cb79; }
-.copyright p { color: #fff; font-size: 12px; text-transform: uppercase; margin-bottom: 0;}
+.menu-footer .copyright p { color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 0; font-weight: bolder; padding-right: 20px}
 
 @media screen and (max-width: 950px) {
     .menu-responsive { display: block; width: 100%; height: 50px; position: fixed; background-color: #2f3742; z-index: 900;}

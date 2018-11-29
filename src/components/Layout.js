@@ -5,7 +5,6 @@ import NavigationBar from "../components/NavigationBar";
 import FavIcon from '../images/icon.png';
 
 const Layout = (props) => {
-    console.log(props)
     return (
         <StaticQuery
             query={graphql`query { site { siteMetadata { title description keywords author } } }`}

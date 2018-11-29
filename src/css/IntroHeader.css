@@ -13,3 +13,8 @@
 @media screen and (max-width: 950px){
     .intro-bg { margin-left: 0; width: 100% }
 }
+
+@media (max-width: 600px){
+    .intro-button a { font-size: 14px;}
+    .designation span { line-height: 26px }
+}
