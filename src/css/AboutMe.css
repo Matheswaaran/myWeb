@@ -1,0 +1,27 @@
+.white-bg { background: #ffffff; }
+.page-section { padding: 60px 0px; margin-left: 230px;}
+/*section-title*/
+.section-title { position: relative; display: block; margin-bottom: 80px;}
+.section-title-name { position: relative; z-index: 9; }
+.section-title-name h2 { font-size: 38px; color: #2f3742; font-weight: 600; margin-top: 4px; }
+.section-title-name span {  background: #07cb79; display: inline-block; font-size: 16px; color: #ffffff; padding: 6px 20px; }
+.title-name-gray { position: absolute; left: 160px; top: 0px; }
+.title-name-gray strong { font-size: 100px; font-style: italic; font-weight: bold; color: rgba(247, 248, 249, 0.7); margin: 0px; line-height: 68px; }
+/*block-contact*/
+/*.about{ margin-top: 60px; }*/
+.about .section-title { margin-bottom: 20px; }
+.about-social { background: #07cb79; padding: 15px 10px; text-align: center; }
+.about-social ul { padding: 0px; margin: 0px; }
+.about-social ul li { display: inline-block; }
+.about-social ul li a { display: block; margin: 0px 5px; width: 40px; height: 40px; background: #00b569; color: #ffffff; line-height: 40px; text-align: center; border-radius: 50%; font-size: 14px; }
+.about-social ul li a:hover { background: #2f3742; }
+/*my-contact*/
+.my-contact { margin-top: 50px }
+.my-contact .contact-icon { float: left; margin-right: 25px; }
+.my-contact .contact-icon span { font-size: 30px; line-height: 46px; }
+.my-contact .contact-info { display: table-cell; }
+.my-contact .contact-info h4 { font-size: 20px; font-weight: bold; text-transform: capitalize; margin-top: 0px; margin-bottom: 5px; }
+.my-contact .contact-info p { font-weight: 600; font-size: 16px;}
+.about-block p { margin-top: 30px;  }
+.about-block p { font-size: 16px; font-style: italic; line-height: 30px; }
+.about-block p b { color: #2f3742; }
