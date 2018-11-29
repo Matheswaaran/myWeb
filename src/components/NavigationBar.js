@@ -19,15 +19,9 @@ class NavigationBar extends React.Component {
             <div>
                 <div className="menu-responsive">
                     <a href="#home">MATHESWAARAN</a>
-                    {this.state.responsive ?
-                        (<a className="icon" onClick={this.onIconCLickHandler}>
-                            <MdClose size={30} color="#FFF"/>
-                        </a>)
-                    :
-                        (<a className="icon" onClick={this.onIconCLickHandler}>
-                            <FaBars size={30} color="#FFF"/>
-                        </a>)
-                    }
+                    <a href='#' className="icon" onClick={this.onIconCLickHandler}>
+                        {this.state.responsive ? (<MdClose size={30} color="#FFF"/>) : (<FaBars size={30} color="#FFF"/>)}
+                    </a>
                 </div>
                 <header className={this.state.responsive ? "header-container responsive" : "header-container"}>
                     <nav id="menu" className="navbar navbar-default">
