@@ -11,7 +11,7 @@ const Layout = (props) => {
             render={(data => (
                 <>
                     <Helmet
-                        title={data.site.siteMetadata.title}
+                        title={`${data.site.siteMetadata.title} - matheswaaran.com`}
                         meta={[
                             {name: 'description', content: data.site.siteMetadata.description},
                             {name: 'keywords', content: data.site.siteMetadata.keywords},
