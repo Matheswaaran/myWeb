@@ -18,7 +18,13 @@ const Layout = (props) => {
                             {name: 'author', content: data.site.siteMetadata.author}
                         ]}
                         link={[
-                            {rel: 'shortcut icon', type: 'image/png', href: FavIcon}
+                            {rel: 'shortcut icon', type: 'image/png', href: FavIcon},
+                            {
+                                rel: 'stylesheet',
+                                href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+                                integrity: "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO",
+                                crossorigin: 'anonymous',
+                            }
                         ]}
                     >
                         <html lang="en" />
