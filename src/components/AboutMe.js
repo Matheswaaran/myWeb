@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/AboutMe.css';
-import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub, FaRegUser, FaMobileAlt } from 'react-icons/fa';
+import {GoMail} from "react-icons/go";
+import {FiCalendar, FiFlag} from "react-icons/fi";
+import {TiDirections} from "react-icons/ti";
 
 class AboutMe extends React.Component {
 
@@ -11,7 +14,7 @@ class AboutMe extends React.Component {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 col-sm-4">
                             <div className="about-image">
-                                <img className="img-responsive" src={require("../images/me.jpg")} alt=""/>
+                                <img className="img-responsive" src={require("../images/me.jpg")} alt="" style={{ width: '100%' }}/>
                             </div>
                             <div className="about-social">
                                 <ul>
@@ -38,9 +41,7 @@ class AboutMe extends React.Component {
                                 <div className="row">
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-user"/>
-                                            </div>
+                                            <div className="contact-icon"><FaRegUser size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Name:</h4>
                                                 <p>Matheswaaran</p>
@@ -49,9 +50,7 @@ class AboutMe extends React.Component {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-email"/>
-                                            </div>
+                                            <div className="contact-icon"><GoMail size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Email:</h4>
                                                 <p>matheswaarans@
@@ -61,9 +60,7 @@ class AboutMe extends React.Component {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-mobile"/>
-                                            </div>
+                                            <div className="contact-icon"><FaMobileAlt size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Phone:</h4>
                                                 <p>(+91)9025923103</p>
@@ -74,9 +71,7 @@ class AboutMe extends React.Component {
                                 <div className="row">
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-calendar"/>
-                                            </div>
+                                            <div className="contact-icon"><FiCalendar size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Date of birth: </h4>
                                                 <p>11 September 1996</p>
@@ -85,9 +80,7 @@ class AboutMe extends React.Component {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-direction-alt"/>
-                                            </div>
+                                            <div className="contact-icon"><TiDirections size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Address: </h4>
                                                 <p>Simmakkal, Madurai</p>
@@ -96,9 +89,7 @@ class AboutMe extends React.Component {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-4">
                                         <div className="my-contact clearfix">
-                                            <div className="contact-icon">
-                                                <span className="ti-flag-alt-2"/>
-                                            </div>
+                                            <div className="contact-icon"><FiFlag size={30}/></div>
                                             <div className="contact-info">
                                                 <h4>Nationality: </h4>
                                                 <p>Indian</p>
