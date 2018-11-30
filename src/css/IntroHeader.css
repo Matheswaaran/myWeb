@@ -7,6 +7,8 @@
 .hello h1 span {font-size: 3.5vh; display: block; font-family: 'Raleway', sans-serif; font-weight: bold;}
 .designation { height: 60px; }
 .designation span {font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif;}
+.typer { height: 40px; margin-bottom: 5%}
+.typer h2 { font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
 .intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; font-weight: 600; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
 .intro-button a:hover { background: #2f3742; }
 
