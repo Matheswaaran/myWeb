@@ -24,7 +24,7 @@ class NavigationBar extends React.Component {
                     </a>
                 </div>
                 <header className={this.state.responsive ? "header-container responsive" : "header-container"}>
-                    <nav id="menu" className="navbar navbar-default">
+                    <nav id="menu" className="navbar-container navbar-default">
                         <div className="navbar-header"></div>
                         <div className="collapse navbar-collapse navbar-ex1-collapse">
                             <ul id="navbar" className="nav navbar-nav">
