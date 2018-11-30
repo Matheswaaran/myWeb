@@ -10,8 +10,8 @@ class IntroHeader extends React.Component {
                     <div className="name-container">
                         <div className="hello">
                             <h1><span>Hello I'm</span> Matheswaaran</h1>
-                            <div className="designation">
-                                <span>Developer</span>
+                            <div className="typer">
+                                <h2>Developer</h2>
                             </div>
                             <div className="intro-button">
                                 <a href="https://tinyurl.com/matsresume" target="_blank" rel="noreferrer noopener">Download my Resume</a>
