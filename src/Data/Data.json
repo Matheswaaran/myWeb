@@ -1,0 +1,26 @@
+{
+  "name": "Matheswaaran",
+  "contactNo": "+91-9025923103",
+  "emailId": "matheswaarans @gamil.com",
+  "dataOfBirth": "September 11, 1996",
+  "Address": "Simmakkal, Madurai",
+  "Nationality": "Indian",
+  "resumeUrl": "https://tinyurl.com/matsresume",
+  "socialLinks": {
+    "fb": "https://www.facebook.com/matheswaaran",
+    "twitter": "https://twitter.com/Matheswaaran_S",
+    "g_plus": "https://plus.google.com/+Matheswaaran",
+    "linkedIn": "https://www.linkedin.com/in/matheswaaran",
+    "instagram": "https://www.instagram.com/matheswaaran",
+    "github": "https://www.github.com/Matheswaaran"
+  },
+  "introHeader": {
+    "designation": "Developer"
+  },
+  "aboutMe": {
+    "introData": [
+      "I am Madurai based Linux System enthusiast, a web developer, quick learner of new technologies and a dedicated scripter and programmer. A fresher with hands-on on various programming languages and concepts.",
+      "I am currently working as Frontend Developer at NFN Labs, Chennai on ReactJS, Javascript and cross platform app development using Facebook's React Native."
+    ]
+  }
+}
