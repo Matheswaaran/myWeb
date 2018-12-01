@@ -26,3 +26,25 @@ h3 { font-size: 24px; }
 h4 { font-size: 18px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
+
+.white-bg { background: #ffffff; }
+.page-section { padding: 60px 0px; margin-left: 230px;}
+/*section-title*/
+.section-title { position: relative; display: block; margin-bottom: 80px;}
+.section-title-name { position: relative; z-index: 9; }
+.section-title-name h2 { font-size: 38px; color: #2f3742; font-weight: 600; margin-top: 4px; }
+.section-title-name span {  background: #07cb79; display: inline-block; font-size: 16px; color: #ffffff; padding: 6px 20px; }
+.title-name-gray { display: block; position: absolute; left: 160px; top: 0px; }
+.title-name-gray strong { font-size: 100px; font-style: italic; font-weight: bold; color: rgba(247, 248, 249, 0.7); margin: 0px; line-height: 68px; }
+
+@media screen and (max-width: 950px){
+    .page-section{margin-left: 0}
+}
+
+@media screen and (max-width: 700px) {
+    .title-name-gray { display: none; }
+}
+
+@media screen and (max-width: 600px){
+    .section-title{ margin-top: 60px; }
+}
