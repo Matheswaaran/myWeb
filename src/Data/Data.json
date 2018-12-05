@@ -2,10 +2,7 @@
   "name": "Matheswaaran",
   "contactNo": "+91-9025923103",
   "emailId": "matheswaarans @gamil.com",
-  "dataOfBirth": "September 11, 1996",
   "Address": "Simmakkal, Madurai",
-  "Nationality": "Indian",
-  "resumeUrl": "https://tinyurl.com/matsresume",
   "socialLinks": {
     "fb": "https://www.facebook.com/matheswaaran",
     "twitter": "https://twitter.com/Matheswaaran_S",
@@ -15,12 +12,111 @@
     "github": "https://www.github.com/Matheswaaran"
   },
   "introHeader": {
+    "resumeUrl": "https://tinyurl.com/matsresume",
     "designation": "Developer"
   },
   "aboutMe": {
+    "dataOfBirth": "September 11, 1996",
+    "Nationality": "Indian",
     "introData": [
       "I am Madurai based Linux System enthusiast, a web developer, quick learner of new technologies and a dedicated scripter and programmer. A fresher with hands-on on various programming languages and concepts.",
       "I am currently working as Frontend Developer at NFN Labs, Chennai on ReactJS, Javascript and cross platform app development using Facebook's React Native."
     ]
-  }
+  },
+  "resume": {
+    "experience": [
+        {
+        "company": "NFN Labs",
+        "designation": "Frontend Developer",
+        "from": "Jun 2018",
+        "to": "Present",
+        "icon": "",
+        "description": ""
+      }
+    ],
+    "education": [
+      {
+        "college": "PSNA College of Engg. and Tech.",
+        "course": "B.Tech Information Technology",
+        "from": "Aug 2014",
+        "to": "May 2018",
+        "icon": "",
+        "description": ""
+      },
+      {
+        "college": "Mahatma Montessori Matric. Hr. Sec. School",
+        "course": "Higher Secondary and Secondary Schooling",
+        "from": "Jun 2008",
+        "to": "Apr 2014",
+        "icon": "",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "BASH Script",
+        "percentage": "75%"
+      },
+      {
+        "name": "React Native",
+        "percentage": "70%"
+      },
+      {
+        "name": "ReactJs & Redux",
+        "percentage": "70%"
+      },
+      {
+        "name": "Linux System Administration",
+        "percentage": "75%"
+      },
+      {
+        "name": "Git & Github",
+        "percentage": "75%"
+      },
+      {
+        "name": "Docker",
+        "percentage": "50%"
+      }
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "percentage": "75%",
+        "level": "Experienced"
+      },
+      {
+        "name": "Tamil",
+        "percentage": "90%",
+        "level": "Basic"
+      },
+      {
+        "name": "Hindi",
+        "percentage": "75%",
+        "level": "Beginner"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Project IHRM",
+      "fromTime": "Apr 2017",
+      "toTime": "Aug 2018",
+      "title": "Integrated Human Resource Management",
+      "description": ""
+    },
+    {
+      "name": "Fly-By",
+      "fromTime": "Jul 2017",
+      "toTime": "Dec 2017",
+      "title": "Navigation System for Flying Cars",
+      "description": ""
+    },
+    {
+      "name": "Project ISM",
+      "fromTime": "Mar 2018",
+      "toTime": "Oct 2018",
+      "title": "Integrated Scheme Management",
+      "description": ""
+    }
+  ]
 }
