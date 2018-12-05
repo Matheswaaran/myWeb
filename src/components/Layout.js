@@ -29,7 +29,7 @@ const Layout = (props) => {
                     >
                         <html lang="en" />
                     </Helmet>
-                    <NavigationBar/>
+                    <NavigationBar socialLinks={props.socialLinks} name={props.name}/>
                     <div>
                         {props.children}
                     </div>
