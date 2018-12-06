@@ -30,7 +30,7 @@ class NavigationBar extends React.Component {
                             <ul id="navbar" className="nav navbar-nav">
                                 <li className="active"><a href="#home" className="page-scroll">Home</a></li>
                                 <li><a href="#about" className="page-scroll">About</a></li>
-                                <li><a href="#education" className="page-scroll">Education</a></li>
+                                <li><a href="#resume" className="page-scroll">Resume</a></li>
                                 <li><a href="#skill" className="page-scroll">Skill</a></li>
                                 <li><a href="#my_projects" className="page-scroll">My Projects</a></li>
                                 <li><a href="#portfolio" className="page-scroll">Portfolio</a></li>

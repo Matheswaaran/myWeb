@@ -4,6 +4,7 @@ import {graphql} from "gatsby";
 import IntroHeader from "../components/IntroHeader";
 import AboutMe from "../components/AboutMe";
 import Layout from "../components/Layout";
+import Resume from "../components/Resume";
 
 const App = ({data}) => (
     <Layout socialLinks={data.dataJson.socialLinks} name={data.dataJson.name}>
@@ -13,6 +14,7 @@ const App = ({data}) => (
             socialLinks={data.dataJson.socialLinks}
             data={{ name : data.dataJson.name, contactNo: data.dataJson.contactNo, emailId: data.dataJson.emailId, Address: data.dataJson.Address }}
         />
+       <Resume resume={data.dataJson.resume} />
     </Layout>
 );
 

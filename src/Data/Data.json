@@ -25,31 +25,34 @@
   },
   "resume": {
     "experience": [
-        {
+      {
         "company": "NFN Labs",
+        "companyWebsite": "https://nfnlabs.in",
         "designation": "Frontend Developer",
         "from": "Jun 2018",
         "to": "Present",
         "icon": "",
-        "description": ""
+        "description": "I am currently working here as cross platform app developer using Facebook's React Native. Have learned a lot including Javascript, React and much more. The work culture here is awesome and it will always be my favourite place."
       }
     ],
     "education": [
       {
         "college": "PSNA College of Engg. and Tech.",
+        "collegeWebsite": "https://psnacet.edu.in",
         "course": "B.Tech Information Technology",
         "from": "Aug 2014",
         "to": "May 2018",
         "icon": "",
-        "description": ""
+        "description": "I completed my under-graduate degree in Bachelor of Technology in the branch Information Technology in PSNA College of Engineering and Technology on 2018. I took this course based on my interest towards the emerging IT sector during this period and I dedicated myself for learning new technologies."
       },
       {
         "college": "Mahatma Montessori Matric. Hr. Sec. School",
+        "collegeWebsite": "http://www.mahatmaschools.com/",
         "course": "Higher Secondary and Secondary Schooling",
         "from": "Jun 2008",
         "to": "Apr 2014",
         "icon": "",
-        "description": ""
+        "description": "I did my higher secondary education and secondary schooling here. That was one of the good days in my life where we have learnt many things including Paper Presentation, Seminars, Spot pitching and so on. Here we used to learn things in a more practical manner rather than theoretically."
       }
     ],
     "skills": [
