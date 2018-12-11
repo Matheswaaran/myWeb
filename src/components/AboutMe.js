@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub, 
 import {GoMail} from "react-icons/go";
 import {FiCalendar, FiFlag} from "react-icons/fi";
 import {TiDirections} from "react-icons/ti";
+import SectionTitle from './SectionTitle';
 
 class AboutMe extends React.Component {
 
@@ -28,15 +29,7 @@ class AboutMe extends React.Component {
               </div>
             </div>
             <div className="col-lg-8 col-md-8 col-sm-8">
-              <div className="section-title">
-                <div className="section-title-name">
-                  <span>Know about me</span>
-                  <h2>About Me</h2>
-                </div>
-                <div className="title-name-gray">
-                  <strong>About me</strong>
-                </div>
-              </div>
+              <SectionTitle title="About Me" description="Know about me"/>
               <div className="contact-block">
                 <div className="row">
                   <div className="col-lg-4 col-md-4 col-sm-4">
