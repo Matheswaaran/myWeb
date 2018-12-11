@@ -99,8 +99,8 @@ class AboutMe extends React.Component {
                 <div className="row">
                   <div className="col-lg-12 col-md-12">
                     <div className="about-block clearfix">
-                      {this.props.aboutMe.introData.map(x => (
-                          <p>{x}</p>
+                      {this.props.aboutMe.introData.map((x, index) => (
+                          <p key={index}>{x}</p>
                       ))}
                     </div>
                   </div>

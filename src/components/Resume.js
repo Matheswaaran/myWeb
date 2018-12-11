@@ -23,8 +23,8 @@ const Resume = (props) => {
             <h2>Experience : </h2>
           </div>
         </div>
-        {props.resume.experience.map(ex => (
-          <div className="resume-block">
+        {props.resume.experience.map((ex, index) => (
+          <div className="resume-block" key={index}>
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-4">
                 <div className="resume-icon">
@@ -49,26 +49,26 @@ const Resume = (props) => {
             <h2>Education : </h2>
           </div>
         </div>
-        {props.resume.education.map(edu => (
-            <div className="resume-block">
-              <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-4">
-                  <div className="resume-icon">
-                    <span className="fa fa-graduation-cap"></span>
-                  </div>
-                  <div className="resume-name">
-                    <h3><a href={edu.collegeWebsite} target="_blank" rel="noopener noreferrer">{edu.college}</a></h3>
-                    <span>{edu.from} to {edu.to}</span>
-                  </div>
+        {props.resume.education.map((edu, index) => (
+          <div className="resume-block" key={index}>
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-sm-4">
+                <div className="resume-icon">
+                  <span className="fa fa-graduation-cap"></span>
                 </div>
-                <div className="col-lg-8 col-md-8 col-sm-8">
-                  <div className="resume-info">
-                    <h3>{edu.course}</h3>
-                    <p>{edu.description}</p>
-                  </div>
+                <div className="resume-name">
+                  <h3><a href={edu.collegeWebsite} target="_blank" rel="noopener noreferrer">{edu.college}</a></h3>
+                  <span>{edu.from} to {edu.to}</span>
+                </div>
+              </div>
+              <div className="col-lg-8 col-md-8 col-sm-8">
+                <div className="resume-info">
+                  <h3>{edu.course}</h3>
+                  <p>{edu.description}</p>
                 </div>
               </div>
             </div>
+          </div>
         ))}
       </div>
     </section>
