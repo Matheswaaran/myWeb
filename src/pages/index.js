@@ -6,25 +6,29 @@ import IntroHeader from "../components/IntroHeader";
 import AboutMe from "../components/AboutMe";
 import Layout from "../components/Layout";
 import Resume from "../components/Resume";
+import Skills from "../components/Skills";
 
 const App = ({data}) => (
   <ScrollingProvider scrollBehavior="smooth">
-      <Layout socialLinks={data.dataJson.socialLinks} name={data.dataJson.name}>
-          <Section id="home">
-            <IntroHeader introHeader={data.dataJson.introHeader} name={data.dataJson.name} />
-          </Section>
-          <Section id="about">
-            <AboutMe
-              aboutMe={data.dataJson.aboutMe}
-              socialLinks={data.dataJson.socialLinks}
-              data={{ name : data.dataJson.name, contactNo: data.dataJson.contactNo, emailId: data.dataJson.emailId, Address: data.dataJson.Address }}
-            />
-          </Section>
-          <Section id="resume">
-            <Resume resume={data.dataJson.resume} />
+    <Layout socialLinks={data.dataJson.socialLinks} name={data.dataJson.name}>
+        <Section id="home">
+          <IntroHeader introHeader={data.dataJson.introHeader} name={data.dataJson.name} />
         </Section>
-      </Layout>
-    </ScrollingProvider>
+        <Section id="about">
+          <AboutMe
+            aboutMe={data.dataJson.aboutMe}
+            socialLinks={data.dataJson.socialLinks}
+            data={{ name : data.dataJson.name, contactNo: data.dataJson.contactNo, emailId: data.dataJson.emailId, Address: data.dataJson.Address }}
+          />
+        </Section>
+        <Section id="resume">
+          <Resume resume={data.dataJson.resume} />
+        </Section>
+        <Section id="skills">
+          <Skills resume={data.dataJson.resume}/>
+        </Section>
+    </Layout>
+  </ScrollingProvider>
 );
 
 export const query = graphql`

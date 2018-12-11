@@ -36,13 +36,6 @@ class NavigationBar extends React.Component {
                                 <NavigationItem section="my_projects" name="My Projects"/>
                                 <NavigationItem section="portfolio" name="Portfolio"/>
                                 <NavigationItem section="contact" name="Contact"/>
-                                {/* <li className={this.props.active === "home" ? "active" : ""}><a href="#home" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "home")}>Home</a></li>
-                                <li className={this.props.active === "about" ? "active" : ""}><a href="#about" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "about")}>About</a></li>
-                                <li className={this.props.active === "resume" ? "active" : ""}><a href="#resume" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "resume")}>Resume</a></li>
-                                <li className={this.props.active === "skill" ? "active" : ""}><a href="#skill" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "skills")}>Skill</a></li>
-                                <li className={this.props.active === "my_projects" ? "active" : ""}><a href="#my_projects" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "my_projects")}>My Projects</a></li>
-                                <li className={this.props.active === "portfolio" ? "active" : ""}><a href="#portfolio" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "portfolio")}>Portfolio</a></li>
-                                <li className={this.props.active === "contact" ? "active" : ""}><a href="#contact" className="page-scroll" onClick={this.props.onLinksClickHandler.bind(this, "contact")}>contact</a></li> */}
                             </ul>
                         </div>
                     </nav>

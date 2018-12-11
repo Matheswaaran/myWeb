@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Resume.css';
+import SectionTitle from './SectionTitle';
 
 const Resume = (props) => {
   return (
@@ -7,15 +8,7 @@ const Resume = (props) => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-md-12">
-            <div className="section-title">
-              <div className="section-title-name">
-                <span>My Work Experience</span>
-                <h2>Résumé</h2>
-              </div>
-              <div className="title-name-gray">
-                <strong>Résumé</strong>
-              </div>
-            </div>
+            <SectionTitle title="Resume" description="My Work Experience" />
           </div>
         </div>
         <div className="row">
