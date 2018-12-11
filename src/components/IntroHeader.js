@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/IntroHeader.css'
-import {graphql, StaticQuery} from "gatsby";
 
 class IntroHeader extends React.Component {
 

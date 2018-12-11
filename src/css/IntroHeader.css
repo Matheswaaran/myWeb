@@ -10,7 +10,7 @@
 .typer { height: 40px; margin-bottom: 5%}
 .typer h2 { font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
 .intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; font-weight: 600; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
-.intro-button a:hover { background: #2f3742; }
+.intro-button a:hover { background: #2f3742; text-decoration: none; color: #ffffff}
 
 @media screen and (max-width: 950px){
     .intro-bg { margin-left: 0; width: 100% }
