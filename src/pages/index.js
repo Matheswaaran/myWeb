@@ -18,7 +18,7 @@ const App = ({data}) => (
           <AboutMe
             aboutMe={data.dataJson.aboutMe}
             socialLinks={data.dataJson.socialLinks}
-            data={{ name : data.dataJson.name, contactNo: data.dataJson.contactNo, emailId: data.dataJson.emailId, Address: data.dataJson.Address }}
+            data={{ ...data.dataJson }}
           />
         </Section>
         <Section id="resume">
