@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/IntroHeader.css'
+import '../css/IntroHeader.css';
+import { SectionLink } from "react-scroll-section";
 
 class IntroHeader extends React.Component {
 
@@ -18,6 +19,9 @@ class IntroHeader extends React.Component {
               </div>
             </div>
           </div>
+          <SectionLink section="about">
+            {link => (<a class="scroll-down" onClick={link.onClick}><i></i></a>)}
+          </SectionLink>
         </div>
       </div>
     );
