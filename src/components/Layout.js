@@ -13,7 +13,7 @@ class Layout extends React.Component{
         render={(data => (
           <>
             <Helmet
-              title={`${data.site.siteMetadata.title} - matheswaaran.com`}
+              title={`${this.props.errorPage ? "404 Error Page not Found" : data.site.siteMetadata.title} - matheswaaran.com`}
               meta={[
                   {name: 'description', content: data.site.siteMetadata.description},
                   {name: 'keywords', content: data.site.siteMetadata.keywords},
@@ -31,10 +31,12 @@ class Layout extends React.Component{
             >
               <html lang="en" />
             </Helmet>
-            <NavigationBar
-              socialLinks={data.dataJson.socialLinks}
-              name={data.dataJson.name}
-            />
+            {this.props.errorPage ? null : (
+              <NavigationBar
+                socialLinks={data.dataJson.socialLinks}
+                name={data.dataJson.name}
+              />
+            )}
             <div>
               {this.props.children}
             </div>
