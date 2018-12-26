@@ -4,7 +4,7 @@ import '../css/404.css';
 import { GoHome } from "react-icons/go";
 
 const NotFoundPage = () => (
-  <section className="content-scroller">
+  <section>
     <div className="error-bg gradient-01">
       <div className="error">
         <div className="error-contact">
