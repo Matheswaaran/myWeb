@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from "gatsby";
 import '../css/404.css';
 import { GoHome } from "react-icons/go";
+import Layout from "../components/Layout";
 
 const NotFoundPage = () => (
-  <section>
+  <Layout errorPage>
     <div className="error-bg gradient-01">
       <div className="error">
         <div className="error-contact">
@@ -17,7 +18,7 @@ const NotFoundPage = () => (
         </div>
       </div>
     </div>
-  </section>
+  </Layout>
 );
 
 export default NotFoundPage;
