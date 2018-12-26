@@ -10,7 +10,7 @@ import Skills from "../components/Skills";
 
 const App = ({data}) => (
   <ScrollingProvider scrollBehavior="smooth">
-    <Layout socialLinks={data.dataJson.socialLinks} name={data.dataJson.name}>
+    <Layout>
         <Section id="home">
           <IntroHeader introHeader={data.dataJson.introHeader} name={data.dataJson.name} />
         </Section>

@@ -3,13 +3,13 @@
 .intro-container {display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: flex-start; min-height: 100vh;}
 .name-container {display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; justify-content: center; margin-left: 10%; z-index: 300}
 .hello {display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-start;}
-.hello h1 {font-size: 5vmax; color: #ffffff; text-transform: uppercase; font-weight: 700; font-family: 'Raleway', sans-serif; margin-bottom: 20px}
-.hello h1 span {font-size: 3.5vh; display: block; font-family: 'Raleway', sans-serif; font-weight: bold;}
+.hello h1 {font-size: 72px; color: #ffffff; text-transform: uppercase; font-weight: 600; font-family: 'Raleway', sans-serif; margin-bottom: 15px}
+.hello h1 span {font-size: 30px; display: block; font-family: 'Raleway', sans-serif; font-weight: 500;}
 .designation { height: 60px; }
-.designation span {font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif;}
+.designation span {font-size: 28px; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif;}
 .typer { height: 40px; margin-bottom: 5%}
-.typer h2 { font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
-.intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; font-weight: 600; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
+.typer h2 { font-size: 28px; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
+.intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
 .intro-button a:hover { background: #2f3742; text-decoration: none; color: #ffffff}
 .scroll-down { text-align: center; width: 34px; height: 58px; display: inline-block; border-radius: 20px; border:3px solid #fff; position: absolute; left: 50%; bottom: 60px;
 margin-left: -17px; line-height: 50px; }
@@ -42,7 +42,7 @@ margin-left: -17px; line-height: 50px; }
 50% {transform:translateY(25px);opacity:1; }
 100% {transform:translateY(0);opacity:1; }
 }
- 
+
 @media screen and (max-width: 950px){
     .intro-bg { margin-left: 0; width: 100% }
 }
