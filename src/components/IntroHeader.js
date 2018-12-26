@@ -20,7 +20,7 @@ class IntroHeader extends React.Component {
             </div>
           </div>
           <SectionLink section="about">
-            {link => (<a class="scroll-down" onClick={link.onClick}><i></i></a>)}
+            {link => (<a className="scroll-down" onClick={link.onClick} rel="noreferrer noopener"><i></i></a>)}
           </SectionLink>
         </div>
       </div>

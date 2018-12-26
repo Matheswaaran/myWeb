@@ -3,7 +3,7 @@
 
 .header-container { position: fixed; overflow: visible; display: block; left: 0px; width: 230px; top: 0px; bottom: 0px; z-index: 999; background: #2f3742;padding-bottom: 110px; }
 .navbar-default { background: transparent; border: 0px; }
-.navbar-default .navbar-nav > li > a { font-size: 14px; text-transform: uppercase; color: #ffffff; font-family: 'Raleway', sans-serif; font-weight: 600; padding: 10px 15px 10px 30px; border-right: 0px solid transparent; }
+.navbar-default .navbar-nav > li > a { font-size: 14px; text-transform: uppercase; color: #ffffff; font-family: 'Raleway', sans-serif; padding: 10px 15px 10px 30px; border-right: 0px solid transparent; }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { color: #ffffff; }
 .navbar-default .navbar-nav>li>a.active, .navbar-default .navbar-nav>li>a:hover { background: transparent; color: #07cb79; box-shadow: 15px 0px 0px 0px #07cb79 inset; border-right: 5px solid #07cb79; text-decoration: none}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover { background: transparent; color: #07cb79; box-shadow: 15px 0px 0px 0px #07cb79 inset; border-right: 5px solid #07cb79; }
@@ -33,7 +33,7 @@
 .menu-footer .social ul li { display: inline-block; }
 .menu-footer .social ul li a { display: block; font-size: 14px; padding-right:15px; color: #ffffff;}
 .menu-footer .social ul li a:hover { color: #07cb79; }
-.menu-footer .copyright p { color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 0; font-weight: bolder; padding-right: 20px}
+.menu-footer .copyright p { color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 0; padding-right: 20px}
 
 @media screen and (max-width: 950px) {
     .menu-responsive { display: block; width: 100%; height: 50px; position: fixed; background-color: #2f3742; z-index: 900;}

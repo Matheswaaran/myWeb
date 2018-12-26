@@ -9,7 +9,7 @@ class Layout extends React.Component{
   render() {
     return (
       <StaticQuery
-        query={graphql`query { site { siteMetadata { title description keywords author } } }`}
+        query={graphql`query { site { siteMetadata { title description keywords author } } dataJson { name socialLinks { fb twitter g_plus instagram linkedIn github } } }`}
         render={(data => (
           <>
             <Helmet
@@ -32,8 +32,9 @@ class Layout extends React.Component{
               <html lang="en" />
             </Helmet>
             <NavigationBar
-                socialLinks={this.props.socialLinks}
-                name={this.props.name}/>
+              socialLinks={data.dataJson.socialLinks}
+              name={data.dataJson.name}
+            />
             <div>
               {this.props.children}
             </div>
