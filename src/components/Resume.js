@@ -6,11 +6,7 @@ const Resume = (props) => {
   return (
     <section id="resume" className="resume white-bg page-section">
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-lg-12 col-md-12">
-            <SectionTitle title="Resume" description="My Work Experience" />
-          </div>
-        </div>
+        <SectionTitle span={12} title="Resume" description="My Work Experience" />
         <div className="row">
           <div className="col-lg-12 col-md-12">
             <h2>Experience : </h2>
