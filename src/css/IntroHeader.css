@@ -11,7 +11,7 @@
 .typer h2 { font-size: 28px; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
 .intro-button a {padding: 10px 30px; font-size: 18px; border-radius: 3px; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif; text-decoration: none}
 .intro-button a:hover { background: #2f3742; text-decoration: none; color: #ffffff}
-.scroll-down { text-align: center; width: 34px; height: 58px; display: inline-block; border-radius: 20px; border:3px solid #fff; position: absolute; left: 50%; bottom: 60px;
+.scroll-down { cursor: pointer; text-align: center; width: 34px; height: 58px; display: inline-block; border-radius: 20px; border:3px solid #fff; position: absolute; left: 50%; bottom: 60px;
 margin-left: -17px; line-height: 50px; }
 .scroll-down i { height: 10px;  width: 4px; background: #fff; display: inline-block; border-radius: 3px; -webkit-animation-name:fadebounce;  -moz-animation-name:fadebounce; -ms-animation-name:fadebounce; -o-animation-name:fadebounce; animation-name:fadebounce; -webkit-animation-duration:3s; -moz-animation-duration:3s; -ms-animation-duration:3s; -o-animation-duration:3s;
  animation-duration:3s; -webkit-animation-iteration-count:infinite; -moz-animation-iteration-count:infinite; -ms-animation-iteration-count:infinite; -o-animation-iteration-count:infinite;
