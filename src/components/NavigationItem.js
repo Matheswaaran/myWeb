@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import { SectionLink } from "react-scroll-section";
 
 class NavigationItem extends React.Component{
@@ -6,9 +7,19 @@ class NavigationItem extends React.Component{
         return (
             <SectionLink section={this.props.section}>
                 {link => (
-                    <li className={link.isSelected ? "active" : ""}>
-                        <a onClick={link.onClick}>{this.props.name}</a>
-                    </li>
+                    <>
+                        {this.props.page ? (
+                            <li className={link.isSelected ? "active" : ""}>
+                                <Link to={this.props.page}>
+                                    <a onClick={link.onClick}>{this.props.name}</a>
+                                </Link>
+                            </li>
+                        ) : (
+                            <li className={link.isSelected ? "active" : ""}>
+                                <a onClick={link.onClick}>{this.props.name}</a>
+                            </li>
+                        )}
+                    </>
                 )}
             </SectionLink>
         )
