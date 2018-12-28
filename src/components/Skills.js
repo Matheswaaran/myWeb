@@ -1,6 +1,4 @@
 import React from 'react';
-import PageTransition from 'gatsby-plugin-page-transitions';
-import Transition from 'react-transition-group';
 import '../css/Skills.css';
 import SectionTitle from './SectionTitle';
 
