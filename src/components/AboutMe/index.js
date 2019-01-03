@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub, 
 import {GoMail} from "react-icons/go";
 import {FiCalendar, FiFlag} from "react-icons/fi";
 import {TiDirections} from "react-icons/ti";
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../SectionTitle';
 
 class AboutMe extends React.Component {
 
@@ -15,7 +15,7 @@ class AboutMe extends React.Component {
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-4">
               <div className="about-image">
-                <img className="img-responsive" src={require("../images/me.jpg")} alt="" style={{ width: '100%' }}/>
+                <img className="img-responsive" src={require("../../images/me.jpg")} alt="" style={{ width: '100%' }}/>
               </div>
               <div className="about-social">
                 <ul>

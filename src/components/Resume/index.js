@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../SectionTitle';
 
 const Resume = (props) => {
   return (
