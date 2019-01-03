@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/AboutMe.css';
+import './AboutMe.css';
 import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub, FaRegUser, FaMobileAlt } from 'react-icons/fa';
 import {GoMail} from "react-icons/go";
 import {FiCalendar, FiFlag} from "react-icons/fi";

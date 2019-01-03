@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Resume.css';
+import './Resume.css';
 import SectionTitle from './SectionTitle';
 
 const Resume = (props) => {

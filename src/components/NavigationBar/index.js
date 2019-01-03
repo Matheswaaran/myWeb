@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/NavigationBar.css';
+import './NavigationBar.css';
 import { FaFacebookF, FaBars, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { MdClose } from "react-icons/md";
 import NavigationItem from './NavigationItem';

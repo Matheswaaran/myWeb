@@ -1,5 +1,5 @@
 import React from "react"
-import '../css/Layout.css';
+import '../components/Layout/Layout.css';
 import {graphql} from "gatsby";
 import { ScrollingProvider, Section } from "react-scroll-section";
 import IntroHeader from "../components/IntroHeader";
@@ -11,22 +11,22 @@ import Skills from "../components/Skills";
 const App = ({data}) => (
   <ScrollingProvider scrollBehavior="smooth">
     <Layout>
-        <Section id="home">
-          <IntroHeader introHeader={data.dataJson.introHeader} name={data.dataJson.name} />
-        </Section>
-        <Section id="about">
-          <AboutMe
-            aboutMe={data.dataJson.aboutMe}
-            socialLinks={data.dataJson.socialLinks}
-            data={{ ...data.dataJson }}
-          />
-        </Section>
-        <Section id="resume">
-          <Resume resume={data.dataJson.resume} />
-        </Section>
-        <Section id="skills">
-          <Skills resume={data.dataJson.resume}/>
-        </Section>
+      <Section id="home">
+        <IntroHeader introHeader={data.dataJson.introHeader} name={data.dataJson.name} />
+      </Section>
+      <Section id="about">
+        <AboutMe
+          aboutMe={data.dataJson.aboutMe}
+          socialLinks={data.dataJson.socialLinks}
+          data={{ ...data.dataJson }}
+        />
+      </Section>
+      <Section id="resume">
+        <Resume resume={data.dataJson.resume} />
+      </Section>
+      <Section id="skills">
+        <Skills resume={data.dataJson.resume}/>
+      </Section>
     </Layout>
   </ScrollingProvider>
 );
