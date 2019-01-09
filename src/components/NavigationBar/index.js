@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/NavigationBar.css';
+import './NavigationBar.css';
 import { FaFacebookF, FaBars, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { MdClose } from "react-icons/md";
 import NavigationItem from './NavigationItem';
@@ -33,9 +33,8 @@ class NavigationBar extends React.Component {
                                 <NavigationItem section="about" name="about"/>
                                 <NavigationItem section="resume" name="Resume"/>
                                 <NavigationItem section="skills" name="Skills"/>
-                                <NavigationItem section="" name="Blog" page="blog"/>
+                                <NavigationItem section="blog" name="Blog Posts"/>
                                 <NavigationItem section="my_projects" name="My Projects"/>
-                                <NavigationItem section="portfolio" name="Portfolio"/>
                                 <NavigationItem section="contact" name="Contact"/>
                             </ul>
                         </div>

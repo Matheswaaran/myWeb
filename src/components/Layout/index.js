@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import NavigationBar from "../components/NavigationBar";
-import FavIcon from '../images/icon.png';
+import NavigationBar from "../NavigationBar";
+import FavIcon from '../../images/icon.png';
 
 class Layout extends React.Component{
 

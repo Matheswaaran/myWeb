@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Skills.css';
-import SectionTitle from './SectionTitle';
+import './Skills.css';
+import SectionTitle from '../SectionTitle';
 
 class Skills extends React.Component{
   render() {

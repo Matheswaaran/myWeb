@@ -1,7 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "matheswaaran_website",
+  "description": "A small webpage about myself and my works - Matheswaaran",
   "license": "MIT",
+  "author": "Matheswaaran",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheswaaran/myWeb.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

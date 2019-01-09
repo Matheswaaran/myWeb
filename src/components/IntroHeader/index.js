@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/IntroHeader.css';
+import './IntroHeader.css';
 import { SectionLink } from "react-scroll-section";
 
 class IntroHeader extends React.Component {
