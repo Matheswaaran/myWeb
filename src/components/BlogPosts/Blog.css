@@ -1,0 +1,26 @@
+.button-small a { padding: 8px 15px; font-size: 14px; border-radius: 3px; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif;  }
+.button-small a:hover { background: #2f3742; }
+button.button-small { padding: 8px 15px; display: block; font-size: 14px; width: 100%; margin: 0px; border: 0px; border-radius: 3px; background: #464e5a; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif;  }
+button.button-small:hover { background: #07cb79; }
+
+.blog-block .blog-image { position: relative; }
+.blog-block .blog-image .blog-date { position: absolute; left: 20px; top: 20px; }
+.blog-block .blog-image .blog-date span { background: #07cb79; padding: 10px 15px; text-align: center; font-weight: 600; font-size: 16px; text-transform: uppercase; color: #ffffff; display: block; }
+.blog-info { margin: -25px 10px 10px 10px; background: #f8f9fa; padding: 20px; position: relative; }
+.blog-info .blog-meta span { color: #9ea8b6; display: inline-block; padding-right: 4px; }
+.blog-info .blog-meta p { display: inline-block; font-size: 14px; font-weight: 600; color: #2f3742; padding-right: 12px; margin-bottom: 0px; }
+.blog-info .blog-meta p:nth-child(3) { padding-right: 0px; }
+.blog-info .blog-meta p a { color: #2f3742; }
+.blog-info .blog-meta p a:hover { color: #07cb79; }
+.blog-info .blog-content { margin-top: 20px; }
+.blog-info .blog-content a { font-size: 26px; font-weight: 200; text-transform: capitalize; color: #2f3742; margin-bottom: 15px; display: block; }
+.blog-info .blog-content a:hover { color: #07cb79; }
+.blog-bottom .button-small { display: inline-block; }
+.blog-bottom .button-small a { color: #fff; display: inline-block; font-size: 13px;	 text-transform: capitalize; margin-bottom: 0px; }
+.blog-bottom .button-small a:hover { color: #fff; }
+.blog-bottom { margin-top: 20px; }
+.blog-bottom .social { display: inline-block;  }
+.blog-bottom .social ul li { display: inline-block; line-height: 0px; }
+.blog-bottom .social ul li a { font-size: 14px; color: #9ea8b6; padding-left:10px; padding-top: 8px; margin-bottom: 0px; }
+.blog-bottom .social ul li a:hover { color: #07cb79;  }
+.pagination { margin-bottom: 0; }
