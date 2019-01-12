@@ -10,7 +10,7 @@ const Contact = (props) => {
       <div className="container-fluid">
         <div id="google-map">
           <div id="map-canvas">
-            <Maps/>
+            <Maps mapData={props.contact}/>
           </div>
         </div>
         <div className="contact">

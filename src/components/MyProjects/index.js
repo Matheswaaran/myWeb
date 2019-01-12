@@ -19,7 +19,10 @@ const MyProjects = (props) => {
               <div className="col-lg-8 col-md-8 col-sm-8">
                 <div className="resume-info">
                   <h3>{project.title}</h3>
-                  <p>{project.description}</p>
+                  <p>
+                    {project.description} <br/>
+                    <b>Tools Used:</b> {project.toolsUsed}
+                  </p>
                 </div>
               </div>
             </div>

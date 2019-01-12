@@ -3,16 +3,17 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class Maps extends React.Component{
   render() {
+    const { map_initial_coordinates, home_coordinates, mapZoom } = this.props.mapData;
     return (
       <Map
           google={this.props.google}
-          zoom={15}
-          initialCenter={{lat: 9.927089, lng: 78.120056}}
+          zoom={mapZoom}
+          initialCenter={map_initial_coordinates}
       >
         <Marker
             title="My Home"
             name={'Home'}
-            position={{lat: 9.927089, lng: 78.120056}}
+            position={home_coordinates}
         />
       </Map>
     );
