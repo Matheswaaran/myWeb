@@ -83,7 +83,7 @@ export const query = graphql`
         }
       }
       projects{
-        name title fromTime toTime description
+        name title fromTime toTime description toolsUsed
       }
     }
   }

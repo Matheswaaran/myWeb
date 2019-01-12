@@ -116,21 +116,24 @@
       "fromTime": "Apr 2017",
       "toTime": "Aug 2018",
       "title": "Integrated Human Resource Management",
-      "description": ""
+      "description": "This project won the 6th position at Smart India hackathon-2017 under the ministry of steel at Indore, MP. The main moto is to manage the human resources deployed by the contractors and the goverment users can see the whole process in thier portal avoiding forgery.",
+      "toolsUsed": "C#, .Net, Mobile Application, Raspberry PI, Machine Learning, PHP"
     },
     {
       "name": "Fly-By",
       "fromTime": "Jul 2017",
       "toTime": "Dec 2017",
       "title": "Navigation System for Flying Cars",
-      "description": ""
+      "description": "This project is a futuristic approach to navigation system for drones and flying vehicles. The project is in initial stage of development. We are using ArcGIS software for creating a map service server. We are focused to develop a prototype, which depicts the navigation assistance for drones and flying vehicles.",
+      "toolsUsed": "Python, Numpy"
     },
     {
       "name": "Project ISM",
       "fromTime": "Mar 2018",
       "toTime": "Oct 2018",
       "title": "Integrated Scheme Management",
-      "description": ""
+      "description": "This project won the 1st position at Smart India hackathon-2018 under the Ministry of Social Empowerment and Justice at Bhopal, MP. The main moto is to map all the schemes of the central government and all the state governments into a single portal avoiding the duplicacy and creating more awareness by scaning the Aadhar Card.",
+      "toolsUsed": "AngularJS, Mobile Application, HTML, CSS, Firebase"
     }
   ]
 }
