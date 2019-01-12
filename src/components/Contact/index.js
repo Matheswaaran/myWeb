@@ -1,37 +1,41 @@
 import React from 'react';
 import './Contact.css';
+import Maps from './Maps';
+import {FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub, FaRegEdit, FaMobileAlt} from 'react-icons/fa';
+import { MdLocationOn } from "react-icons/md";
 
 const Contact = (props) => {
   return (
     <section id="contact" className="google-map white-bg page-section-pt">
       <div className="container-fluid">
         <div id="google-map">
-          <div id="map-canvas"></div>
+          <div id="map-canvas">
+            <Maps/>
+          </div>
         </div>
         <div className="contact">
-          <h2>Say Hi It’s Free! </h2>
+          <h2>Say Hi It’s Free!</h2>
           <div className="address">
             <ul>
-              <li><span className="ti-location-pin"></span> <p>Simmakkal, Madurai</p></li>
-              <li><span className="ti-marker-alt"></span> <p>matheswaarans@gmail.com</p></li>
-              <li><span className="ti-mobile"></span> <p>(+91)9025923103</p></li>
+              <li><MdLocationOn size={20}/> <span>Simmakkal, Madurai</span></li>
+              <li><FaRegEdit size={20}/> <span>matheswaarans@gmail.com</span></li>
+              <li><FaMobileAlt size={20}/> <span>(+91)9025923103</span></li>
             </ul>
           </div>
           <div className="social">
             <h4>I'm also on Social Networks</h4>
             <p>Follow me on social networks to get the latest news, blog, updates and much more.</p>
             <ul>
-              <li><a href="https://www.facebook.com/matheswaaran" target="_blank"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/Matheswaaran_S" target="_blank"><i className="fa fa-twitter"></i></a></li>
-              <li><a href="https://plus.google.com/+Matheswaaran" target="_blank"><i className="fa fa-google-plus"></i> </a></li>
-              <li><a href="https://www.linkedin.com/in/matheswaaran" target="_blank"><i className="fa fa-linkedin"></i> </a></li>
-              <li><a href="https://www.instagram.com/matheswaaran/" target="_blank"><i className="fa fa-instagram"></i> </a></li>
-              <li><a href="https://www.github.com/Matheswaaran" target="_blank"><i className="fa fa-github"></i> </a>
-              </li>
+              <li><a href={props.socialLinks.fb} target="_blank" rel="noopener noreferrer"><FaFacebookF size={16}/></a></li>
+              <li><a href={props.socialLinks.twitter} target="_blank" rel="noopener noreferrer"><FaTwitter size={16}/></a></li>
+              <li><a href={props.socialLinks.g_plus} target="_blank" rel="noopener noreferrer"><FaGoogle size={16}/></a></li>
+              <li><a href={props.socialLinks.linkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={16}/></a></li>
+              <li><a href={props.socialLinks.instagram} target="_blank" rel="noopener noreferrer"><FaInstagram size={16}/></a></li>
+              <li><a href={props.socialLinks.github} target="_blank" rel="noopener noreferrer"><FaGithub size={16}/></a></li>
             </ul>
           </div>
           <div className="button-large">
-            <a href="https://tinyurl.com/matsresume" target="_blank">Download my Resume</a>
+            <a href={props.resumeUrl} target="_blank">Download my Resume</a>
           </div>
         </div>
       </div>

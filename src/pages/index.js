@@ -37,7 +37,7 @@ const App = ({data}) => (
         <MyProjects myProjects={data.dataJson.projects}/>
       </Section>
       <Section id="contact">
-        <Contact/>
+        <Contact socialLinks={data.dataJson.socialLinks} resumeUrl={data.dataJson.introHeader.resumeUrl}/>
       </Section>
     </Layout>
   </ScrollingProvider>
