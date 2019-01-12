@@ -37,7 +37,11 @@ const App = ({data}) => (
         <MyProjects myProjects={data.dataJson.projects}/>
       </Section>
       <Section id="contact">
-        <Contact socialLinks={data.dataJson.socialLinks} resumeUrl={data.dataJson.introHeader.resumeUrl}/>
+        <Contact
+          socialLinks={data.dataJson.socialLinks}
+          resumeUrl={data.dataJson.introHeader.resumeUrl}
+          contact={data.dataJson.contact}
+        />
       </Section>
     </Layout>
   </ScrollingProvider>
@@ -52,6 +56,11 @@ export const query = graphql`
       Address
       socialLinks {
         fb twitter g_plus instagram linkedIn github
+      }
+      contact { 
+        map_initial_coordinates { lat lng } 
+        home_coordinates { lat lng }
+        mapZoom
       }
       introHeader {
         resumeUrl designation

@@ -11,6 +11,17 @@
     "instagram": "https://www.instagram.com/matheswaaran",
     "github": "https://www.github.com/Matheswaaran"
   },
+  "contact": {
+    "map_initial_coordinates": {
+      "lat": 9.927089,
+      "lng": 78.120056
+    },
+    "home_coordinates": {
+      "lat": 9.927089,
+      "lng": 78.120056
+    },
+    "mapZoom": 15
+  },
   "introHeader": {
     "resumeUrl": "https://tinyurl.com/matsresume",
     "designation": "Developer"
