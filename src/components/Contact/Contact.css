@@ -4,19 +4,23 @@
 .button-large a:hover { background: #2f3742; text-decoration: none; color: #FFFFFF; }
 .google-map .container-fluid { padding-right: 0px; padding-left: 0px; position: relative; }
 #google-map { padding: 0; }
-#map-canvas {width: 100%;height: 900px; }
+#map-canvas {width: 100%;height: 800px; }
 .google-map { margin-top: 30px; }
-.contact { position: absolute; left: 0px; top:0px; bottom: 0px; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 999; padding: 50px; }
-.contact h2 { color: #ffffff; font-size: 40px; text-transform: uppercase; font-family: 'Raleway', sans-serif; font-weight: 100}
+.contact { position: absolute; left: 0; top:0; bottom: 0; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 888; padding: 50px; }
+.contact h2 { color: #ffffff; font-size: 40px; font-family: 'Raleway', sans-serif; font-weight: 100}
 .contact .address { margin-top: 40px; }
 .contact .address ul li { display: block; color: #fff;  margin-bottom: 25px; }
-.contact .address ul li span {  display: table-cell; font-size: 20px; }
-.contact .address ul li p { display: table-cell; padding-left: 20px; color: #fff; font-size: 16px; vertical-align: middle; }
+.contact .address ul li span { padding-left: 20px; color: #fff; font-size: 16px; vertical-align: middle; }
 .contact .button-large { margin-top: 70px; }
 .contact .button-large a { font-size: 14px; padding: 20px 30px; }
 .contact .social { margin-top: 70px; display: block; }
 .contact .social ul li { display: inline-block; }
 .contact .social ul li a { display: block; color: #ffffff; font-size: 16px; padding-right: 30px; }
 .contact .social ul li a:hover { color: #07cb79; }
-.contact .social h4 { color: #fff; text-transform: uppercase; }
+.contact .social h4 { color: #fff; text-transform: uppercase; font-size: 18px }
 .contact .social p { color: #fff; display: block; margin-bottom: 30px; }
+
+@media screen and (max-width: 950px) {
+    .page-section-pt { padding: 0 0 0 0; }
+    .contact { width: 45% }
+}

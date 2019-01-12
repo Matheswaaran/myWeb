@@ -37,8 +37,8 @@
 
 @media screen and (max-width: 950px) {
     .menu-responsive { display: block; width: 100%; height: 50px; position: fixed; background-color: #2f3742; z-index: 900;}
-    .menu-responsive a:first-child {float: left; background-color: #2f3742; text-decoration: none; color: #ffffff; font-size: 18px; text-transform: uppercase; font-weight: bold; padding: 12px 15px;}
-    .menu-responsive a.icon {position: absolute; right: 12px; top: 9px; font-size: 24px; color: #fff; }
+    .menu-responsive a:first-child {height: 100%;float: left; background-color: #2f3742; text-decoration: none; color: #ffffff; font-size: 18px; text-transform: uppercase; font-weight: bold; padding: 12px 15px;}
+    .menu-responsive a.icon {position: absolute; right: 12px; top: 4px; font-size: 24px; color: #fff; }
     .header-container {display: none}
     .header-container.responsive { display: block; }
 }
