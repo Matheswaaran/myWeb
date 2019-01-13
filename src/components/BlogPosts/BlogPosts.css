@@ -1,9 +1,10 @@
 .button-small a { padding: 8px 15px; font-size: 14px; border-radius: 3px; background: #07cb79; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif;  }
-.button-small a:hover { background: #2f3742; }
+.button-small a:hover { background: #2f3742; text-decoration: none}
 button.button-small { padding: 8px 15px; display: block; font-size: 14px; width: 100%; margin: 0px; border: 0px; border-radius: 3px; background: #464e5a; color: #ffffff; text-transform: uppercase; font-family: 'Raleway', sans-serif;  }
 button.button-small:hover { background: #07cb79; }
 
 .blog-block .blog-image { position: relative; }
+.blog-block .blog-image img { display: block; max-width: 100%; height: auto; }
 .blog-block .blog-image .blog-date { position: absolute; left: 20px; top: 20px; }
 .blog-block .blog-image .blog-date span { background: #07cb79; padding: 10px 15px; text-align: center; font-weight: 600; font-size: 16px; text-transform: uppercase; color: #ffffff; display: block; }
 .blog-info { margin: -25px 10px 10px 10px; background: #f8f9fa; padding: 20px; position: relative; }

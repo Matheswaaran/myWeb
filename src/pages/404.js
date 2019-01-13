@@ -5,7 +5,7 @@ import { GoHome } from "react-icons/go";
 import Layout from "../components/Layout";
 
 const NotFoundPage = () => (
-  <Layout errorPage>
+  <Layout pageTitle="404 Error, Page not Found">
     <div className="error-bg gradient-01">
       <div className="error">
         <div className="error-contact">
