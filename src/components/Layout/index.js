@@ -33,6 +33,7 @@ class Layout extends React.Component{
             </Helmet>
             {this.props.errorPage ? null : (
               <NavigationBar
+                blogPage={this.props.blogPage}
                 socialLinks={data.dataJson.socialLinks}
                 name={data.dataJson.name}
               />

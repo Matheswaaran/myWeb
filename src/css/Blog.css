@@ -1,5 +1,6 @@
 .white-bg { background: #ffffff; }
-.page-section { padding: 60px 0px; }
+.page-section { padding: 60px 0px; margin-left: 230px; }
+.content-scroller { margin-left: 230px; }
 
 .bg { background: url(../images/blog/01.jpg); background-attachment: fixed; background-clip: initial; background-color: rgba(0, 0, 0, 0); background-origin: initial; background-position: center center; background-repeat: no-repeat; background-size: cover !important; position: relative; z-index: 0; }
 .page-header { padding: 50px 10px; margin: 0px; width: 100%; height: 400px; position: relative; }
