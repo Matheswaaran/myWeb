@@ -20,7 +20,7 @@ button.button-small:hover { background: #07cb79; }
 .blog-bottom .button-small a { color: #fff; display: inline-block; font-size: 13px;	 text-transform: capitalize; margin-bottom: 0px; }
 .blog-bottom .button-small a:hover { color: #fff; }
 .blog-bottom { margin-top: 20px; }
-.blog-bottom .social { display: inline-block;  }
+.blog-bottom .social { display: inline-block; float: right; }
 .blog-bottom .social ul li { display: inline-block; line-height: 0px; }
 .blog-bottom .social ul li a { font-size: 14px; color: #9ea8b6; padding-left:10px; padding-top: 8px; margin-bottom: 0px; }
 .blog-bottom .social ul li a:hover { color: #07cb79;  }
