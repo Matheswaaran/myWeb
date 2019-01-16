@@ -10,15 +10,14 @@ const BlogPosts = ({ blogData }) => {
         <SectionTitle span={12} title="Blog Posts" description="My Latest Blog Posts"/>
         <div className="row">
           {blogData.edges.map((node, index) => {
-            if (index < 3) {
-              return (
-                <BlogPostSingle
-                  key={index}
-                  frontmatter={node.node.frontmatter}
-                  excerpt={node.node.excerpt}
-                />
-              )
-            }
+            return (
+              <BlogPostSingle
+                key={index}
+                frontmatter={node.node.frontmatter}
+                excerpt={node.node.excerpt}
+                timeToRead={node.node.timeToRead}
+              />
+            )
           })}
         </div>
       </div>

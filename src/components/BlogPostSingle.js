@@ -2,8 +2,9 @@ import React from 'react';
 import blog from "../images/blog/01.jpg";
 import {FaRegFolder, FaRegUser} from "react-icons/fa";
 import {Link} from "gatsby";
+import './BlogPosts/BlogPosts.css';
 
-const BlogPostSingle = ({ frontmatter, excerpt, key }) => {
+const BlogPostSingle = ({ frontmatter, excerpt, key, timeToRead }) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-6" key={key}>
       <div className="blog-block">
@@ -19,22 +20,18 @@ const BlogPostSingle = ({ frontmatter, excerpt, key }) => {
             <p><span><FaRegFolder size={14}/></span><a href="#">{frontmatter.category}</a></p>
           </div>
           <div className="blog-content">
-            <Link to={frontmatter.path}><a>{frontmatter.title}</a></Link>
+            <Link to={frontmatter.path}>{frontmatter.title}</Link>
             <small>{frontmatter.sub_title}</small>
             <p>{excerpt}</p>
             <div className="blog-bottom clearfix">
-              <Link to={frontmatter.path}>
                 <div className="button-small">
-                  <a href="">Read More..</a>
+                  <Link to={frontmatter.path}>Read More..</Link>
                 </div>
-              </Link>
-              {/*<div className="social pull-right">*/}
-              {/*<ul>*/}
-              {/*<li><a href="#"><i className="fa fa-facebook"></i> </a></li>*/}
-              {/*<li><a href="#"><i className="fa fa-twitter"></i></a></li>*/}
-              {/*<li><a href="#"><i className="fa fa-linkedin"></i> </a></li>*/}
-              {/*</ul>*/}
-              {/*</div>*/}
+              <div className="social">
+                <ul>
+                  <li>{timeToRead} mins Read</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
