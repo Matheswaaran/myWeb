@@ -86,7 +86,7 @@ export const query = graphql`
         name title fromTime toTime description toolsUsed
       }
     }
-    allMarkdownRemark{
+    allMarkdownRemark  (sort: { order: ASC, fields: frontmatter___date }) {
       edges{
         node{
           frontmatter{ path title author sub_title date category }
