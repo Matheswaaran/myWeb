@@ -31,7 +31,7 @@ const App = ({data}) => (
         <Skills resume={data.dataJson.resume}/>
       </Section>
       <Section id="blog">
-        <Blog/>
+        <Blog blogData={data.allMarkdownRemark}/>
       </Section>
       <Section id="my_projects">
         <MyProjects myProjects={data.dataJson.projects}/>
@@ -84,6 +84,15 @@ export const query = graphql`
       }
       projects{
         name title fromTime toTime description toolsUsed
+      }
+    }
+    allMarkdownRemark{
+      edges{
+        node{
+          frontmatter{ path title author sub_title date category }
+          html
+          excerpt
+        }
       }
     }
   }

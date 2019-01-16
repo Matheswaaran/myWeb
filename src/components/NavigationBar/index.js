@@ -28,15 +28,24 @@ class NavigationBar extends React.Component {
                     <nav id="menu" className="navbar-container navbar-default">
                         <div className="navbar-header"></div>
                         <div className="collapse navbar-collapse navbar-ex1-collapse">
-                            <ul id="navbar" className="nav navbar-nav">
-                                <NavigationItem section="home" name="Home"/>
-                                <NavigationItem section="about" name="about"/>
-                                <NavigationItem section="resume" name="Resume"/>
-                                <NavigationItem section="skills" name="Skills"/>
-                                <NavigationItem section="blog" name="Blog Posts"/>
-                                <NavigationItem section="my_projects" name="My Projects"/>
-                                <NavigationItem section="contact" name="Contact"/>
-                            </ul>
+                            {this.props.blogPage ? (
+                                <ul id="navbar" className="nav navbar-nav">
+                                    <NavigationItem section="home" name="Home" page="/"/>
+                                    <NavigationItem section="recent_posts" name="My Recent Posts"/>
+                                    <NavigationItem section="catagories" name="Catagories"/>
+                                    <NavigationItem section="contact" name="Contact"/>
+                                </ul>
+                            ) : (
+                                <ul id="navbar" className="nav navbar-nav">
+                                    <NavigationItem section="home" name="Home"/>
+                                    <NavigationItem section="about" name="about"/>
+                                    <NavigationItem section="resume" name="Resume"/>
+                                    <NavigationItem section="skills" name="Skills"/>
+                                    <NavigationItem section="blog" name="Blog Posts"/>
+                                    <NavigationItem section="my_projects" name="My Projects"/>
+                                    <NavigationItem section="contact" name="Contact"/>
+                                </ul>
+                            )}
                         </div>
                     </nav>
                     <div className="menu-footer">

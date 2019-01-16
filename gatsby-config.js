@@ -12,9 +12,17 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/src/Data`,
+                name: 'json-data'
+            }
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/pages/posts`,
                 name: 'markdown-data'
             }
         },
+        'gatsby-plugin-catch-links',
         'gatsby-transformer-remark',
         'gatsby-transformer-json',
     ],

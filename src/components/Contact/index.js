@@ -35,7 +35,7 @@ const Contact = (props) => {
             </ul>
           </div>
           <div className="button-large">
-            <a href={props.resumeUrl} target="_blank">Download my Resume</a>
+            <a href={props.resumeUrl} target="_blank" rel="noopener noreferrer">Download my Resume</a>
           </div>
         </div>
       </div>

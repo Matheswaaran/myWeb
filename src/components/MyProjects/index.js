@@ -7,8 +7,8 @@ const MyProjects = (props) => {
     <section id="my_projects" className="resume white-bg page-section">
       <div className="container-fluid">
         <SectionTitle span={12} title="My Projects" description="What I am doing" />
-        {props.myProjects.map((project,index) => (
-          <div className="resume-block">
+        {props.myProjects.map((project, index) => (
+          <div className="resume-block" key={index}>
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-4">
                 <div className="resume-name">

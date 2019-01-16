@@ -11,7 +11,7 @@ class NavigationItem extends React.Component{
                         {this.props.page ? (
                             <li className={link.isSelected ? "active" : ""}>
                                 <Link to={this.props.page}>
-                                    <a onClick={link.onClick}>{this.props.name}</a>
+                                    <a>{this.props.name}</a>
                                 </Link>
                             </li>
                         ) : (
