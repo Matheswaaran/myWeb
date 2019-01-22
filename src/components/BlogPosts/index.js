@@ -3,7 +3,7 @@ import './BlogPosts.css';
 import SectionTitle from "../SectionTitle";
 import BlogPostSingle from '../BlogPostSingle';
 
-const BlogPosts = ({ blogData }) => {
+const BlogPosts = ({ blogData, imageData }) => {
   return (
     <section id="blog" className="blog white-bg page-section">
       <div className="container-fluid">
@@ -16,6 +16,7 @@ const BlogPosts = ({ blogData }) => {
                 frontmatter={node.node.frontmatter}
                 excerpt={node.node.excerpt}
                 timeToRead={node.node.timeToRead}
+                image={imageData[index].node.fixed.src}
               />
             )
           })}

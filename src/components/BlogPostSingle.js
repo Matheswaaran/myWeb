@@ -1,15 +1,15 @@
 import React from 'react';
-import blog from "../images/blog/01.jpg";
+// import blog from "../images/blog/01.jpg";
 import {FaRegFolder, FaRegUser} from "react-icons/fa";
 import {Link} from "gatsby";
 import './BlogPosts/BlogPosts.css';
 
-const BlogPostSingle = ({ frontmatter, excerpt, key, timeToRead }) => {
+const BlogPostSingle = ({ frontmatter, excerpt, key, timeToRead, image }) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-6" key={key}>
       <div className="blog-block">
         <div className="blog-image">
-          <img className="img-responsive" src={blog} alt=""/>
+          <img className="img-responsive" src={image} alt=""/>
           <div className="blog-date">
             <span>{frontmatter.date}</span>
           </div>
@@ -24,9 +24,9 @@ const BlogPostSingle = ({ frontmatter, excerpt, key, timeToRead }) => {
             <small>{frontmatter.sub_title}</small>
             <p>{excerpt}</p>
             <div className="blog-bottom clearfix">
-                <div className="button-small">
-                  <Link to={frontmatter.path}>Read More..</Link>
-                </div>
+              <div className="button-small">
+                <Link to={frontmatter.path}>Read More..</Link>
+              </div>
               <div className="social">
                 <ul>
                   <li>{timeToRead} mins Read</li>

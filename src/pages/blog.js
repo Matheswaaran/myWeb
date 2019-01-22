@@ -26,6 +26,7 @@ const Blog = ({ data }) => {
                       frontmatter={node.node.frontmatter}
                       excerpt={node.node.excerpt}
                       timeToRead={node.node.timeToRead}
+                      image={data.allImageSharp.edges[index].node.fixed.src}
                     />
                   );
                 })}
@@ -54,6 +55,13 @@ export const query = graphql`
           excerpt
           timeToRead
           html
+        }
+      }
+    }
+    allImageSharp(sort: {order: ASC, fields: original___src} ) {
+      edges {
+        node {
+          fixed(width: 363 height: 175) { src }
         }
       }
     }
