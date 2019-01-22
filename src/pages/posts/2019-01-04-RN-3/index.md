@@ -5,6 +5,7 @@ title: "How to use “react-native init” from scratch"
 sub_title: "Playing around React Native — #3"
 author: "Matheswaaran"
 category: "React Native"
+image: '../images/blog/RN-1.jpeg'
 ---
 
 Hello folks, here we are going to get started with a new react native project. But we need to set-up the environment for it. To do so see my previous post.

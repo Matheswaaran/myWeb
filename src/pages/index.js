@@ -31,7 +31,7 @@ const App = ({data}) => (
         <Skills resume={data.dataJson.resume}/>
       </Section>
       <Section id="blog">
-        <Blog blogData={data.allMarkdownRemark}/>
+        <Blog blogData={data.allMarkdownRemark} imageData={data.allImageSharp.edges}/>
       </Section>
       <Section id="my_projects">
         <MyProjects myProjects={data.dataJson.projects}/>
@@ -93,6 +93,13 @@ export const query = graphql`
           timeToRead
           html
           excerpt
+        }
+      }
+    }
+    allImageSharp(sort: {order: ASC, fields: original___src} limit:3 ) {
+      edges {
+        node {
+          fixed(width: 363 height: 175) { src }
         }
       }
     }

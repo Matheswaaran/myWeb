@@ -5,6 +5,7 @@ title: "Basics of React & JSX for React Native Beginners"
 sub_title: "Playing around React Native — #1"
 author: "Matheswaaran"
 category: "React Native"
+image: ./thumb_image.jpeg
 ---
 Is developing mobile apps is too hard and you can’t understand?
 

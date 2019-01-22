@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from "gatsby";
+import '../css/SingleBlogPost.css';
 
 const SingleBlogPost = ({ data }) => {
   console.log(data);
