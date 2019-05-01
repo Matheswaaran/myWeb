@@ -1,6 +1,6 @@
 import React from 'react';
 import './BlogPosts.css';
-import SectionTitle from "../SectionTitle";
+import SectionTitle from '../SectionTitle';
 import BlogPostSingle from '../BlogPostSingle';
 
 const BlogPosts = ({ blogData, imageData }) => {
@@ -16,7 +16,7 @@ const BlogPosts = ({ blogData, imageData }) => {
                 frontmatter={node.node.frontmatter}
                 excerpt={node.node.excerpt}
                 timeToRead={node.node.timeToRead}
-                image={imageData[index].node.fixed.src}
+                image={imageData.filter(image => node.node.frontmatter.image === image.node.fixed.originalName)[0].node.fixed.src}
               />
             )
           })}

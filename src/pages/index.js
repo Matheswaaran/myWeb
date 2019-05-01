@@ -89,7 +89,7 @@ export const query = graphql`
     allMarkdownRemark  (sort: { order: ASC, fields: frontmatter___date } limit: 3) {
       edges{
         node{
-          frontmatter{ path title author sub_title date category }
+          frontmatter{ path title author sub_title date category image }
           timeToRead
           html
           excerpt
@@ -99,7 +99,7 @@ export const query = graphql`
     allImageSharp(sort: {order: ASC, fields: original___src} limit:3 ) {
       edges {
         node {
-          fixed(width: 363 height: 175) { src }
+          fixed(width: 363 height: 175) { src originalName }
         }
       }
     }

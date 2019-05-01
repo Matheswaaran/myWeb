@@ -1,9 +1,8 @@
 import React from 'react';
 import './IntroHeader.css';
-import { SectionLink } from "react-scroll-section";
+import { SectionLink } from 'react-scroll-section';
 
 class IntroHeader extends React.Component {
-
   render() {
     return (
       <div className="intro-bg gradient-01">
@@ -20,7 +19,7 @@ class IntroHeader extends React.Component {
             </div>
           </div>
           <SectionLink section="about">
-            {link => (<a className="scroll-down" onClick={link.onClick} rel="noreferrer noopener"><i></i></a>)}
+            {link => (<a className="scroll-down" onClick={link.onClick} rel="noreferrer noopener"><i/></a>)}
           </SectionLink>
         </div>
       </div>

@@ -16,8 +16,8 @@ const BlogPostSingle = ({ frontmatter, excerpt, key, timeToRead, image }) => {
         </div>
         <div className="blog-info">
           <div className="blog-meta">
-            <p><span><FaRegUser size={14}/></span><a href="#">{frontmatter.author}</a></p>
-            <p><span><FaRegFolder size={14}/></span><a href="#">{frontmatter.category}</a></p>
+            <p><span><FaRegUser size={14}/></span><Link to="/">{frontmatter.author}</Link></p>
+            <p><span><FaRegFolder size={14}/></span><Link to="/">{frontmatter.category}</Link></p>
           </div>
           <div className="blog-content">
             <Link to={frontmatter.path}>{frontmatter.title}</Link>
