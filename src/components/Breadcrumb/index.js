@@ -12,17 +12,14 @@ const Breadcrumb = props => (
             <div className="back-home pull-left">
               <Link to="/">
                 <span><FaAngleLeft size={15} /></span>
-                {' '}
-back to home
+                {' '}back to home
               </Link>
             </div>
             <ul className="breadcrumb pull-right">
               <li>
                 <Link to="/">
                   <span><FaHome size={15} /></span>
-                  {' '}
-Home
-                  {' '}
+                  {' '}Home{' '}
                 </Link>
               </li>
               <li className="active">/ Blog</li>
