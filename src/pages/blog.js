@@ -24,7 +24,6 @@ const Blog = ({ data }) => (
                   frontmatter={node.node.frontmatter}
                   excerpt={node.node.excerpt}
                   timeToRead={node.node.timeToRead}
-                  image={data.allImageSharp.edges[index].node.fixed.src}
                 />
               ))}
             </div>
@@ -47,7 +46,19 @@ export const query = graphql`
     allMarkdownRemark (sort: { order: ASC, fields: frontmatter___date }){
       edges{
         node{
-          frontmatter{ path title author sub_title date category }
+          frontmatter{ 
+            path 
+            title 
+            author 
+            sub_title 
+            date 
+            category
+            thumb_image {
+              childImageSharp{
+                fixed(width: 363 height: 175) { src originalName }
+              }
+            } 
+          }
           excerpt
           timeToRead
           html

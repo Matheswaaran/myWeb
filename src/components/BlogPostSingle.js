@@ -1,5 +1,4 @@
 import React from 'react';
-// import blog from "../images/blog/01.jpg";
 import { FaRegFolder, FaRegUser } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import './BlogPosts/BlogPosts.css';
