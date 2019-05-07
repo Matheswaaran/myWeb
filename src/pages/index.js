@@ -1,17 +1,17 @@
-import React from "react"
+import React from 'react';
 import '../components/Layout/Layout.css';
-import {graphql} from "gatsby";
-import { ScrollingProvider, Section } from "react-scroll-section";
-import IntroHeader from "../components/IntroHeader";
-import AboutMe from "../components/AboutMe";
-import Layout from "../components/Layout";
-import Resume from "../components/Resume";
-import Skills from "../components/Skills";
-import Blog from "../components/BlogPosts";
-import MyProjects from "../components/MyProjects";
-import Contact from "../components/Contact";
+import { graphql } from 'gatsby';
+import { ScrollingProvider, Section } from 'react-scroll-section';
+import IntroHeader from '../components/IntroHeader';
+import AboutMe from '../components/AboutMe';
+import Layout from '../components/Layout';
+import Resume from '../components/Resume';
+import Skills from '../components/Skills';
+import Blog from '../components/BlogPosts';
+import MyProjects from '../components/MyProjects';
+import Contact from '../components/Contact';
 
-const App = ({data}) => (
+const App = ({ data }) => (
   <ScrollingProvider scrollBehavior="smooth">
     <Layout>
       <Section id="home">
@@ -28,13 +28,13 @@ const App = ({data}) => (
         <Resume resume={data.dataJson.resume} />
       </Section>
       <Section id="skills">
-        <Skills resume={data.dataJson.resume}/>
+        <Skills resume={data.dataJson.resume} />
       </Section>
       <Section id="blog">
-        <Blog blogData={data.allMarkdownRemark} imageData={data.allImageSharp.edges}/>
+        <Blog blogData={data.allMarkdownRemark} />
       </Section>
       <Section id="my_projects">
-        <MyProjects myProjects={data.dataJson.projects}/>
+        <MyProjects myProjects={data.dataJson.projects} />
       </Section>
       <Section id="contact">
         <Contact
@@ -89,7 +89,19 @@ export const query = graphql`
     allMarkdownRemark  (sort: { order: ASC, fields: frontmatter___date } limit: 3) {
       edges{
         node{
-          frontmatter{ path title author sub_title date category image }
+          frontmatter{ 
+            path 
+            title 
+            author 
+            sub_title 
+            date 
+            category 
+            thumb_image {
+              childImageSharp{
+                fixed(width: 363 height: 175) { src originalName }
+              }
+            } 
+          }
           timeToRead
           html
           excerpt

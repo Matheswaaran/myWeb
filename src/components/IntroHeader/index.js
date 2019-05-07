@@ -9,7 +9,11 @@ class IntroHeader extends React.Component {
         <div className="intro-container">
           <div className="name-container">
             <div className="hello">
-              <h1><span>Hello I'm</span> {this.props.name}</h1>
+              <h1>
+                <span>Hello I'm</span>
+                {' '}
+                {this.props.name}
+              </h1>
               <div className="typer">
                 <h2>{this.props.introHeader.designation}</h2>
               </div>
@@ -19,7 +23,7 @@ class IntroHeader extends React.Component {
             </div>
           </div>
           <SectionLink section="about">
-            {link => (<a className="scroll-down" onClick={link.onClick} rel="noreferrer noopener"><i/></a>)}
+            {link => (<a className="scroll-down" onClick={link.onClick} rel="noreferrer noopener"><i /></a>)}
           </SectionLink>
         </div>
       </div>

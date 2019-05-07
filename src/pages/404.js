@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from "gatsby";
+import { Link } from 'gatsby';
 import '../css/404.css';
-import { GoHome } from "react-icons/go";
-import Layout from "../components/Layout";
+import { GoHome } from 'react-icons/go';
+import Layout from '../components/Layout';
 
 const NotFoundPage = () => (
   <Layout pageTitle="404 Error, Page not Found" errorPage>
@@ -13,7 +13,11 @@ const NotFoundPage = () => (
           <h1>404 </h1>
           <p>opppsss! it looks like you are lost</p>
           <div className="button">
-            <Link to="/"><GoHome size={13}/> return home</Link>
+            <Link to="/">
+              <GoHome size={13} />
+              {' '}
+return home
+            </Link>
           </div>
         </div>
       </div>
