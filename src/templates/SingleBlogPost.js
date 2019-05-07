@@ -1,15 +1,15 @@
 import React from 'react';
-import { graphql } from "gatsby";
+import { graphql } from 'gatsby';
 import '../css/SingleBlogPost.css';
 
 const SingleBlogPost = ({ data }) => {
   console.log(data);
   const post = data.markdownRemark;
-  return(
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-      </div>
-  )
+  return (
+    <div>
+      <h1>{post.frontmatter.title}</h1>
+    </div>
+  );
 };
 
 export const singleBlogQuery = graphql`

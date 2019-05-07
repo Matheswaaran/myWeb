@@ -5,7 +5,7 @@ title: "Project Environment Setup with react-native-cli"
 sub_title: "Playing around React Native — #2"
 author: "Matheswaaran"
 category: "React Native"
-image: 'Rn2_thumb_image.png'
+thumb_image: 'Rn2_thumb_image.png'
 ---
 To know the basics about React Native, React and JSX see my previous post below.
 
