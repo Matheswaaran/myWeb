@@ -30,7 +30,7 @@ class Layout extends React.Component {
             >
               <html lang="en" />
             </Helmet>
-            {this.props.errorPage ? null : (
+            {this.props.errorPage || this.props.singleBlogPage ? null : (
               <NavigationBar
                 blogPage={this.props.blogPage}
                 socialLinks={data.dataJson.socialLinks}

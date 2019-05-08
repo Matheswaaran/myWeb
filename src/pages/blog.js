@@ -65,13 +65,6 @@ export const query = graphql`
         }
       }
     }
-    allImageSharp(sort: {order: ASC, fields: original___src} ) {
-      edges {
-        node {
-          fixed(width: 363 height: 175) { src }
-        }
-      }
-    }
     dataJson {
       socialLinks {
         fb twitter g_plus instagram linkedIn github
