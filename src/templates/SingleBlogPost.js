@@ -26,6 +26,51 @@ const SingleBlogPost = ({ data }) => {
                   <div className="content" dangerouslySetInnerHTML={{__html: post.html}}>
                   </div>
                 </div>
+                <div className="col-lg-3 col-md-3">
+                  <div className="slidebar">
+                    <div className="slidebar-link">
+                      <h3>Categories</h3>
+                      <ul>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Education</a></li>
+                      </ul>
+                    </div>
+                    <div className="slidebar-post">
+                      <h3>Popular Posts</h3>
+                      <div className="post">
+                        <a href="#">Hypnotherapy For Motivation Getting The Drive Back</a>
+                        <span>Monday / jan 10, 2016 </span>
+                      </div>
+                      <div className="post">
+                        <a href="#">When You Are Down And Out How Do You Get Up And Go Forward</a>
+                        <span>Monday / Feb 10, 2016 </span>
+                      </div>
+                      <div className="post">
+                        <a href="#">How I Lost The Secret Of Dazzling Success For 20 Years</a>
+                        <span>Monday / Mar 10, 2016 </span>
+                      </div>
+                      <div className="post">
+                        <a href="#">Hypnotherapy For Motivation Getting The Drive Back</a>
+                        <span>Monday / Apr 10, 2016 </span>
+                      </div>
+                    </div>
+                    <div className="slidebar-link">
+                      <h3>Categories</h3>
+                      <ul>
+                        <li><a href="#">January 2016 </a></li>
+                        <li><a href="#">February 2016 </a></li>
+                        <li><a href="#">March 2016 </a></li>
+                        <li><a href="#">April 2016 </a></li>
+                        <li><a href="#">May 2016 </a></li>
+                        <li><a href="#">June 2016 </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -65,6 +110,9 @@ export const singleBlogQuery = graphql`
       introHeader {
         resumeUrl designation
       }
+    }
+    allMarkdownRemark {
+      distinct(field: frontmatter___category)
     } 
   }
 `;

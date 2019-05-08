@@ -23,7 +23,21 @@ module.exports = {
       },
     },
     'gatsby-plugin-catch-links',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              showLineNumbers: true,
+            }
+          },
+        ],
+      },
+    },
     'gatsby-transformer-json',
     'gatsby-remark-copy-linked-files',
     'gatsby-transformer-sharp',

@@ -2,21 +2,15 @@
 .page-header-title .blog-meta p { display: inline-block; font-size: 14px; font-weight: 600; color: #2f3742; padding-right: 12px; margin-bottom: 0px; }
 .page-header-title .blog-meta p a { color: #ffffff; }
 .page-header-title .blog-meta p a:hover { color: #07cb79; }
-.blog-single { margin-left: auto; margin-right: auto; max-width: 80rem; padding: 2.625rem 1.3125rem; }
-.blog-single .content { margin-top: 30px; }
+.blog-single { margin-left: auto; margin-right: auto; max-width: 95rem; padding: 2.625rem 1.3125rem; }
+.blog-single .content { margin-top: 30px; margin-left: auto; margin-right: auto; max-width: 55rem; }
 .blog-single .content b { margin-bottom: 20px; display: block; }
 .blog-single .content .social li { display: inline-block; }
 .blog-single .content .social li a { display: block; font-size: 16px; color: #9ea8b6; padding-right: 10px; }
+.blog-single .content p { font-size: 20px }
 .blog-single blockquote { border-color: #07cb79; margin :30px 0px 30px; }
 .blog-single blockquote p { font-size: 16px; font-style: italic; }
 .blog-single blockquote p span { color: #07cb79; margin-top: 10px; display: block; }
-.author { background: #f4f5f6; padding: 15px; }
-.author-details .author-avtar { display: table-cell; }
-.author-details .author-avtar img { width: 80px; border-radius: 50%; }
-.author-details .author-name { display: table-cell; vertical-align: top; padding-left: 30px; }
-.author-details .author-name h4 { text-transform: uppercase; }
-.author-details .author-name b { text-transform: uppercase; color: #07cb79; }
-.author-content { margin-top: 30px; }
 .slidebar-link { margin-top: 50px; }
 .slidebar h3 { color: #07cb79; margin-bottom: 20px; }
 .slidebar-link ul li { display: block; line-height: 30px; }
@@ -39,24 +33,3 @@
 .slidebar-share ul li a { display: block; font-size: 14px; color: #9ea8b6; padding: 0 10px; }
 .slidebar-share ul li a:hover { color: #07cb79; }
 .blog-comments { margin-top: 50px; }
-.comments-1 .comments-photo { width: 106px; height: auto; float: left; border:5px solid #f8f9fa; margin-right: 20px; }
-.comments-1 .comments-photo img { width: 100%; }
-.comments-1 .comments-info { display: table; background: #f8f9fa; padding: 20px 20px 10px; margin-bottom: 30px; }
-.comments-1 .comments-info h4 { display: inline-block; margin-top: 0px; color: #07cb79;  }
-.comments-1 .comments-info span { padding-left: 10px; font-size: 13px; color: #626262; }
-.comments-1 .comments-info a { color: #07cb79; }
-.comments-1 .comments-info a:hover { color: #363636; }
-.comments-1.comments-2 { padding-left: 127px; }
-.comments-1.comments-2 .comments-info { background: #fff; margin-bottom: 40px; padding: 0px 20px 10px 0px; }
-.blog-single .contact-form { margin-top: 50px; }
-.blog-single .contact-form h3 { margin-bottom: 30px; }
-.blog-single .contact-form .section-field input { border-color: #f4f5f6; }
-.blog-single .contact-form .section-field input:focus { border-color: #07cb79; }
-.blog-single .contact-form .section-field textarea { border-color: #f4f5f6; }
-.blog-single .contact-form .section-field textarea:focus { border-color: #07cb79; }
-.blog-single .contact-form .section-field { width: 32%; float: left; margin-right: 2%; }
-.blog-single .contact-form .section-field:nth-child(4) { margin-right: 0px; }
-.blog-single .contact-form .section-field.textarea { width: 100%; }
-.blog-single .contact-form a { padding: 10px 20px; float: left; background: #07cb79; color: #ffffff; font-size: 14px; border-radius: 3px; display: inline-block; }
-.blog-single .contact-form a:hover { background: #2f3742; }
-.owl-carousel-1 { overflow: hidden; }
