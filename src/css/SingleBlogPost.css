@@ -1,0 +1,35 @@
+.page-header-title .blog-meta span { color: #ffffff; display: inline-block; padding-right: 4px; }
+.page-header-title .blog-meta p { display: inline-block; font-size: 14px; font-weight: 600; color: #2f3742; padding-right: 12px; margin-bottom: 0px; }
+.page-header-title .blog-meta p a { color: #ffffff; }
+.page-header-title .blog-meta p a:hover { color: #07cb79; }
+.blog-single { margin-left: auto; margin-right: auto; max-width: 95rem; padding: 2.625rem 1.3125rem; }
+.blog-single .content { margin-top: 30px; margin-left: auto; margin-right: auto; max-width: 55rem; }
+.blog-single .content b { margin-bottom: 20px; display: block; }
+.blog-single .content .social li { display: inline-block; }
+.blog-single .content .social li a { display: block; font-size: 16px; color: #9ea8b6; padding-right: 10px; }
+.blog-single .content p { font-size: 20px }
+.blog-single blockquote { border-color: #07cb79; margin :30px 0px 30px; }
+.blog-single blockquote p { font-size: 16px; font-style: italic; }
+.blog-single blockquote p span { color: #07cb79; margin-top: 10px; display: block; }
+.slidebar-link { margin-top: 50px; }
+.slidebar h3 { color: #07cb79; margin-bottom: 20px; }
+.slidebar-link ul li { display: block; line-height: 30px; }
+.slidebar-link ul li a { color: #9ea8b6; border-bottom: 1px solid #f4f5f6; display: block; padding: 10px 0px; }
+.slidebar-link ul li a:hover { color: #07cb79; border-color: #07cb79; }
+.slidebar-post .post { margin-bottom: 20px; border-bottom: 1px solid #dfdfdf; padding-bottom: 20px; }
+.slidebar-post .post a { display: block; color: #9ea8b6; margin-bottom: 6px; }
+.slidebar-post .post a:hover { color: #07cb79; }
+.slidebar-post .post span { display: block; color: #9ea8b6; }
+.slidebar-post { margin-top: 50px; }
+.slidebar-tag { margin-top: 50px; }
+.slidebar-tag ul li { display: inline-block; }
+.slidebar-tag ul li a { display: block; padding: 10px 15px; text-transform: capitalize; font-size: 14px; color: #9ea8b6; border: 1px solid #f4f5f6; border-radius: 3px; margin: 0px 6px 9px 0px; }
+.slidebar-tag ul li a:hover { background: #07cb79; color: #ffffff; border-color: #07cb79; }
+.slidebar-widget { margin-top: 46px; margin-bottom: 20px; }
+.slidebar-share { margin-top: 20px; background: #f4f5f6; padding: 15px;  }
+.slidebar-share h4 { display: table-cell; padding-right: 10px; text-transform: capitalize; }
+.slidebar-share ul { display: table-cell; }
+.slidebar-share ul li { display: inline-block; }
+.slidebar-share ul li a { display: block; font-size: 14px; color: #9ea8b6; padding: 0 10px; }
+.slidebar-share ul li a:hover { color: #07cb79; }
+.blog-comments { margin-top: 50px; }

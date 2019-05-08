@@ -108,13 +108,6 @@ export const query = graphql`
         }
       }
     }
-    allImageSharp(sort: {order: ASC, fields: original___src} limit:3 ) {
-      edges {
-        node {
-          fixed(width: 363 height: 175) { src originalName }
-        }
-      }
-    }
   }
 `;
 

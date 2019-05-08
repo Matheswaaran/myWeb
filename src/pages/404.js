@@ -15,8 +15,7 @@ const NotFoundPage = () => (
           <div className="button">
             <Link to="/">
               <GoHome size={13} />
-              {' '}
-return home
+              {' '}return home
             </Link>
           </div>
         </div>

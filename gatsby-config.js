@@ -23,16 +23,30 @@ module.exports = {
       },
     },
     'gatsby-plugin-catch-links',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              showLineNumbers: true,
+            }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1080,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-transformer-json',
     'gatsby-remark-copy-linked-files',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-remark-images',
-      options: {
-        maxWidth: 1080,
-      },
-    },
   ],
 };

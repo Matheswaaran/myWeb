@@ -4,22 +4,22 @@ import { Link } from 'gatsby';
 import { FaAngleLeft, FaHome } from 'react-icons/fa';
 
 const Breadcrumb = props => (
-  <section className="content-scroller">
-    <div className="page-header bg gradient-01">
+  <section className="content-scroller" style={props.singleBlogPage ? { margin: 0 } : {}}>
+    <div className="page-header bg gradient-01" style={props.backgroundImage ? {background: `url(${props.backgroundImage})`} : {}}>
       <div className="container-fluid">
         <div className="row">
           <div className="top-bar clearfix">
             <div className="back-home pull-left">
               <Link to="/">
                 <span><FaAngleLeft size={15} /></span>
-                {' '}back to home
+                back to home
               </Link>
             </div>
             <ul className="breadcrumb pull-right">
               <li>
                 <Link to="/">
                   <span><FaHome size={15} /></span>
-                  {' '}Home{' '}
+                  Home
                 </Link>
               </li>
               <li className="active">/ Blog</li>
