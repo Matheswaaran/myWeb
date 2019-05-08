@@ -35,6 +35,12 @@ module.exports = {
               showLineNumbers: true,
             }
           },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1080,
+            },
+          },
         ],
       },
     },
@@ -42,11 +48,5 @@ module.exports = {
     'gatsby-remark-copy-linked-files',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-remark-images',
-      options: {
-        maxWidth: 1080,
-      },
-    },
   ],
 };

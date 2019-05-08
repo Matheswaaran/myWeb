@@ -28,6 +28,8 @@ You will find a folder with the name YourAwesomeProject where you executed the c
 
 You will see a lot of files and folder in that directory as I shown below. Now let us discuss the usage and purpose of all the files and directories created.
 
+![](./directories.png)
+
 #### android/
 This directory contains a native Android application like the one developed in Android Studio. Here you can change the package name of the application, generate release builds change Gradle configurations, dependencies and so on.
 
