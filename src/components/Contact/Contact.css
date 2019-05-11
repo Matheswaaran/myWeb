@@ -6,7 +6,7 @@
 #google-map { padding: 0; }
 #map-canvas {width: 100%;height: 800px; }
 .google-map { margin-top: 30px; }
-.contact { position: absolute; left: 0; top:0; bottom: 0; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 888; padding: 50px; }
+.contact { position: absolute; left: 0; top:0; bottom: 0; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 888; padding: 50px; min-width: 380px}
 .contact h2 { color: #ffffff; font-size: 40px; font-family: 'Raleway', sans-serif; font-weight: 100}
 .contact .address { margin-top: 40px; }
 .contact .address ul li { display: block; color: #fff;  margin-bottom: 25px; }

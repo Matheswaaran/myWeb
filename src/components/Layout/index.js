@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import NavigationBar from '../NavigationBar';
 import FavIcon from '../../images/icon.png';
 
+
 class Layout extends React.Component {
   render() {
     return (

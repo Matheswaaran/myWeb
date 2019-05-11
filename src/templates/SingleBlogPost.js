@@ -1,7 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import '../css/SingleBlogPost.css';
+import { graphql, Link } from 'gatsby';
 import {ScrollingProvider, Section} from "react-scroll-section";
+import '../css/SingleBlogPost.css';
 import Layout from "../components/Layout";
 import Breadcrumb from "../components/Breadcrumb";
 
@@ -31,43 +31,22 @@ const SingleBlogPost = ({ data }) => {
                     <div className="slidebar-link">
                       <h3>Categories</h3>
                       <ul>
-                        <li><a href="#">Architecture</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Creative</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Education</a></li>
+                        {data.allMarkdownRemark.distinct.map((post, index) => (
+                          <li key={index}>
+                            <Link to="/">
+                              {post}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="slidebar-post">
                       <h3>Popular Posts</h3>
-                      <div className="post">
-                        <a href="#">Hypnotherapy For Motivation Getting The Drive Back</a>
-                        <span>Monday / jan 10, 2016 </span>
-                      </div>
-                      <div className="post">
-                        <a href="#">When You Are Down And Out How Do You Get Up And Go Forward</a>
-                        <span>Monday / Feb 10, 2016 </span>
-                      </div>
-                      <div className="post">
-                        <a href="#">How I Lost The Secret Of Dazzling Success For 20 Years</a>
-                        <span>Monday / Mar 10, 2016 </span>
-                      </div>
-                      <div className="post">
-                        <a href="#">Hypnotherapy For Motivation Getting The Drive Back</a>
-                        <span>Monday / Apr 10, 2016 </span>
-                      </div>
-                    </div>
-                    <div className="slidebar-link">
-                      <h3>Categories</h3>
-                      <ul>
-                        <li><a href="#">January 2016 </a></li>
-                        <li><a href="#">February 2016 </a></li>
-                        <li><a href="#">March 2016 </a></li>
-                        <li><a href="#">April 2016 </a></li>
-                        <li><a href="#">May 2016 </a></li>
-                        <li><a href="#">June 2016 </a></li>
-                      </ul>
+                      {data.allMarkdownRemark.edges.map((post, index) => (
+                        <div className="post" key={index}>
+                          <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -111,9 +90,17 @@ export const singleBlogQuery = graphql`
         resumeUrl designation
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: ASC, fields: frontmatter___date }) {
+      edges{
+        node{
+          frontmatter{
+            path
+            title
+          }
+        }
+      }
       distinct(field: frontmatter___category)
-    } 
+    }
   }
 `;
 

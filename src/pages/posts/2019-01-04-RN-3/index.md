@@ -16,11 +16,11 @@ To convert your awesome ideas to Applications we should the basic things like wh
 
 To get started we are gonna create an empty project using “**react-native init**”. Try out the following command in a Terminal or Command Prompt.
 
-```console
+```bash
 react-native init YourAwesomeProject
 ```
 
-> **Note:** Replace <YourAwesomeProject> with your own project Name.
+> **Note:** Replace "YourAwesomeProject" with your own project Name.
 
 This command will create some files and install all the required packages for a common basic React Native app. Some of the basic packages required are “react, react-native, babel” and so on.
 
