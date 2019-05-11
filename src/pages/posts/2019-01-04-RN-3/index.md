@@ -82,4 +82,4 @@ That’s all folks, now you should have a pretty good idea about what each file 
 
 “Running your first ReactNative App” post is being cooked, will be served hot soon in my next post.
 
-Say Hi, Its free. [@matheswaaran_S](https://twitter.com/matheswaaran_S) or [https://matheswaaran.com](https://matheswaaran.com)
+Say Hi, Its free. Tweet to me at [@matheswaaran_S](https://twitter.com/matheswaaran_S) or get ot know me at [https://matheswaaran.com](https://matheswaaran.com).
