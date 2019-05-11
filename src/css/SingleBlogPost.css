@@ -5,12 +5,14 @@
 .blog-single { margin-left: auto; margin-right: auto; max-width: 95rem; padding: 2.625rem 1.3125rem; }
 .blog-single .content { margin-top: 30px; margin-left: auto; margin-right: auto; max-width: 55rem; }
 .blog-single .content b { margin-bottom: 20px; display: block; }
+.blog-single strong { color: grey }
+.blog-single a { color: #9ea8b6; text-decoration: underline }
 .blog-single .content .social li { display: inline-block; }
 .blog-single .content .social li a { display: block; font-size: 16px; color: #9ea8b6; padding-right: 10px; }
-.blog-single .content p { font-size: 20px }
-.blog-single blockquote { border-color: #07cb79; margin :30px 0px 30px; }
-.blog-single blockquote p { font-size: 16px; font-style: italic; }
+.blog-single blockquote { border-left: 5px solid #07cb79; margin :25px 0px; padding: 5px 0 }
+.blog-single blockquote p { font-size: 16px; font-style: italic; margin: 1rem;}
 .blog-single blockquote p span { color: #07cb79; margin-top: 10px; display: block; }
+.blog-single .content p { font-size: 20px; line-height: 30px; margin-bottom: 2rem;}
 .slidebar-link { margin-top: 50px; }
 .slidebar h3 { color: #07cb79; margin-bottom: 20px; }
 .slidebar-link ul li { display: block; line-height: 30px; }
