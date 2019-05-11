@@ -18,3 +18,11 @@
 .page-header-title { padding: 80px 40px; }
 .page-header-title h1 { color: #ffffff; margin-top: 0px; text-transform: capitalize; margin-bottom: 10px; }
 .page-header-title span { color: #ffffff; margin-top: 0px; }
+.metadata { margin-top: 16px }
+.author { margin-right: 16px }
+.author svg { margin-right: 8px; }
+.category svg { margin-right: 8px; }
+
+@media screen and (max-width: 950px){
+  .content-scroller { margin-left: 0; width: 100% }
+}

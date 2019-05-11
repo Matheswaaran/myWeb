@@ -14,6 +14,8 @@ const SingleBlogPost = ({ data }) => {
         <Breadcrumb
           title={post.frontmatter.title}
           subTitle={post.frontmatter.sub_title}
+          author={post.frontmatter.author}
+          category={post.frontmatter.category}
           data={`home/blog/`}
           singleBlogPage
           backgroundImage={post.frontmatter.thumb_image.childImageSharp.fixed.src}
