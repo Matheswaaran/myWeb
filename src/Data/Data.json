@@ -30,7 +30,7 @@
     "dataOfBirth": "September 11, 1996",
     "Nationality": "Indian",
     "introData": [
-      "I am Madurai based Linux System enthusiast, a web developer, quick learner of new technologies and a dedicated scripter and programmer. A fresher with hands-on on various programming languages and concepts.",
+      "Motivated developer dedicated to develop and optimizing websites. Hans-on in various technologies, a team player with an eye for every detail and an excellent communicator.",
       "I am currently working as Frontend Developer at NFN Labs, Chennai on ReactJS, Javascript and cross platform app development using Facebook's React Native."
     ]
   },
@@ -43,7 +43,7 @@
         "from": "Jun 2018",
         "to": "Present",
         "icon": "",
-        "description": "I am currently working here as cross platform app developer using Facebook's React Native. Have learned a lot including Javascript, React and much more. The work culture here is awesome and it will always be my favourite place."
+        "description": "I have worked on a bunch of projects here. The main technologies I used here in Projects are ReactJs, Redux, React Native and WebExtensions API."
       }
     ],
     "education": [
@@ -76,8 +76,16 @@
         "percentage": "70%"
       },
       {
+        "name": "NodeJs & Webpack",
+        "percentage": "60%"
+      },
+      {
         "name": "ReactJs & Redux",
         "percentage": "70%"
+      },
+      {
+        "name": "Javascript and ES6",
+        "percentage": "75%"
       },
       {
         "name": "Linux System Administration",
