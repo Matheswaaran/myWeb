@@ -1,5 +1,6 @@
 import React from 'react';
 import '../components/Layout/Layout.css';
+import ReactGA from 'react-ga';
 import { graphql } from 'gatsby';
 import { ScrollingProvider, Section } from 'react-scroll-section';
 import IntroHeader from '../components/IntroHeader';
@@ -10,6 +11,8 @@ import Skills from '../components/Skills';
 import Blog from '../components/BlogPosts';
 import MyProjects from '../components/MyProjects';
 import Contact from '../components/Contact';
+
+ReactGA.initialize('UA-143836894-1');
 
 const App = ({ data }) => (
   <ScrollingProvider scrollBehavior="smooth">
@@ -57,8 +60,8 @@ export const query = graphql`
       socialLinks {
         fb twitter g_plus instagram linkedIn github
       }
-      contact { 
-        map_initial_coordinates { lat lng } 
+      contact {
+        map_initial_coordinates { lat lng }
         home_coordinates { lat lng }
         mapZoom
       }
@@ -89,18 +92,18 @@ export const query = graphql`
     allMarkdownRemark  (sort: { order: ASC, fields: frontmatter___date } limit: 3) {
       edges{
         node{
-          frontmatter{ 
-            path 
-            title 
-            author 
-            sub_title 
-            date 
-            category 
+          frontmatter{
+            path
+            title
+            author
+            sub_title
+            date
+            category
             thumb_image {
               childImageSharp{
                 fixed(width: 363 height: 175) { src originalName }
               }
-            } 
+            }
           }
           timeToRead
           html
